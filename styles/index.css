@@ -1,0 +1,37 @@
+.title {background-color:blue;}
+.title h1 {background-color:lime;}
+.title .txt_wrap {background-color:yellow;}
+.title .txt_wrap .txt_1 .sub_title {color:red;}
+.title .txt_wrap .txt_1 .name {background-color:purple;}
+/* 선택자연습-2 */
+#weather {}
+#weather h1 {}
+#weather .area {}
+#weather .temperature {}
+#weather p {}
+#weather .sub_title {}
+#weather .humidity {}
+#weather .dust {}
+#weather .result {}
+/* 선택자엽습-3 */
+#news {}
+#news > a {}
+#news .box {}
+#news .box a {}
+#news .box a h2 {}
+#news .box a p {}
+#news > p {}
+/* 선택자연습-4 */
+#papago {}
+#papago nav {}
+#papago nav a {}
+#papago main {}
+#papago main h1 {}
+#papago main h1 a {}
+#papago main > a {}
+#papago > a {}
+/* css디자인 */
+/* #top {background-color:aqua;}
+#top main {background-color:yellow;}
+#top main h1 {background-color:lime;}
+#top main p {} */
