@@ -1,4 +1,5 @@
 /* ver0 */
+h1 {}
 .test_box {}
 .test_box h1 {}
 .test_box h2 {}
@@ -16,10 +17,11 @@
 .test_box > p sub {}
 .test_box .test1 {}
 .test_box .test2 {}
-.test_box .test3 {}
-.test_box .test4 {}
+.test_box .test3_test {}
+.test_box .test4_test {}
 .test_box #wrap {}
 .test_box #wrap p {}
+hr {}
 /* ver1 */
 header {}
 header h1 {}
@@ -29,6 +31,7 @@ header a {}
 /* ver2 */
 .box {}
 .box a {}
+.box a span {}
 .box .contents {}
 .box .contents p {}
 .box .img {}
@@ -56,7 +59,9 @@ main section article p {}
 #t tbody {}
 #t tbody tr {}
 #t tbody tr td {}
+#t tbody tr td span {}
 #t tfoot {}
 #t tfoot tr {}
 #t tfoot tr th {}
 #t tfoot tr td {}
+#t tfoot tr td em {}
