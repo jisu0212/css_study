@@ -13,7 +13,6 @@ h1 {}
 .test_box > p q {}
 .test_box > p code {}
 .test_box > p sup {}
-.test_box > p br {}
 .test_box > p sub {}
 .test_box .test1 {}
 .test_box .test2 {}
@@ -21,14 +20,15 @@ h1 {}
 .test_box .test4_test {}
 .test_box #wrap {}
 .test_box #wrap p {}
-hr {}
 /* ver1 */
+h1 {}
 header {}
 header h1 {}
 header form {}
 header form input {}
 header a {}
 /* ver2 */
+h1 {}
 .box {}
 .box a {}
 .box a span {}
@@ -37,6 +37,7 @@ header a {}
 .box .img {}
 .box .img img {}
 /* ver3 */
+h1 {}
 main {}
 main aside {}
 main aside h2 {}
@@ -52,6 +53,7 @@ main section .top p {}
 main section article {}
 main section article p {}
 /* ver4 */
+h1 {}
 #t {}
 #t thead {}
 #t thead tr {}
