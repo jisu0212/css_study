@@ -1,0 +1,71 @@
+/* 03c75a */
+main {font-family:"Noto Sans KR",sans-serif;}
+main h1,main h1 span {
+    font-size:3.125rem;
+    font-weight:700;
+}
+main h1 {
+    line-height:60px;
+    padding-bottom:48px;
+    letter-spacing:-0.4px;
+}
+main h1 span {color:#03c75a;}
+main p {letter-spacing: -0.4px;}
+main .first {}
+main .first,main .first .user {
+    font-size:1.5rem;
+    padding-bottom:48px;
+}
+main .first .user {color:#03c75a;}
+main .second {}
+main .second, main .second a {
+    font-size:1.25rem;
+    line-height:34px;
+    padding-bottom:50px;
+}
+main .second a {
+    text-decoration: underline;
+}
+main h2 {font-size:1.563rem; padding-bottom:22px;}
+main h2 span {font-size:1.25rem;}
+main .list {
+    border-top:3px solid #000;
+    width:930px;
+}
+main .list thead {background-color:#f5f5f5;}
+main .list thead tr {}
+main .list thead tr th {}
+main .list tbody {
+/*     border-top:1px solid #aaa;
+    border-bottom:1px solid #aaa; */
+    border:1px solid #aaa;
+    border-left:a; border-right:0;
+}
+main .list tbody tr {}
+main .list tbody tr td {}
+main .list tbody tr td em {color:#03c75a;}
+/* main .list thead tr .align,
+main .list tbody tr .align {text-align:center;} */
+main .list tr .align {text-align:center;}
+main .list tr *{padding-top:15px; padding-bottom:15px;}
+main .detail_view {
+    font-size:1.25rem;
+    display:inline-block;
+    text-align:right;
+    width:933px;
+    padding-top:10px;
+}
+main .btm {
+    text-align:center;
+    padding-top:130px;
+    width:933px;
+    text-align:center;
+}
+main .btm a {
+    font-size:1.25rem;
+    background-color:#03c75a;
+    display:inline-block;
+    padding:20px 40px 20px 40px;
+    color:#fff;
+    border-radius:30px;
+}
