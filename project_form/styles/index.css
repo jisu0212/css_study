@@ -1,0 +1,61 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.2px;
+    width:1024px;
+    padding:50px;
+}
+main h1 {
+    font-size: 4.375rem;
+    font-weight:900;
+}
+main p {
+    font-size:1.25rem;
+    margin:25px 0 57px 0;
+}
+main #login_frm {}
+main #login_frm dl {}
+main #login_frm dl dt {
+    font-size:1.875rem;
+    font-weight:700;
+    margin-bottom:18px;
+}
+main #login_frm dl dt dd {}
+main #login_frm dl dd input[type=text] {
+    margin-bottom: 38px;
+}
+main #login_frm dl dd input[type=password] {}
+main #login_frm dl dd input[type=text],
+main #login_frm dl dd input[type=password] {
+    width:500px;
+    height:53px;
+    padding-left:15px;
+    border-radius: 10px;
+    border:1px solid #aaa;
+}
+main #login_frm h2 {
+    font-size:1.875rem;
+    font-weight:700;
+    margin:38px 0 32px;
+}
+main #login_frm .btn_g {}
+main #login_frm .btn_g #login_btn {
+    margin-bottom:18px;
+    background-color:#222;
+    color:#fff;
+}
+main #login_frm .btn_g #login_google_btn {
+    border:1px solid #aaa;
+    background-color: #fff;
+}
+main #login_frm .btn_g #login_btn,
+main #login_frm .btn_g #login_google_btn {font-weight:700; font-size: 1rem;
+width:500px; padding:15px 0;
+border-radius:10px;}
+main .join_link {
+    font-size: 1rem;
+    width:500px;
+    text-align: center;
+}
+main .join_link a {
+    font-weight: 700;
+}
