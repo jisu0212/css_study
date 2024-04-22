@@ -1,0 +1,71 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    width:871px;
+    padding:50px;
+}
+main .list {
+    width:871px;
+}
+main .list thead {
+    background-color:#FF0066;
+}
+main .list thead tr {border-radius: 20px;}
+main .list thead tr th {
+    font-size:1.563rem;
+    font-weight: 700;
+    color:#fff;
+    padding:15px 0;
+    text-align:center;
+    border-right:1px solid #fff;
+}
+main .list thead tr th:nth-child(1) {
+    border-radius: 20px 0 0 0;
+}
+main .list thead tr th:nth-child(5) {
+    border-radius: 0 20px 0 0;
+}
+main .list tbody {
+    background-color: #F2F2F2;
+}
+main .list tbody tr {}
+main .list tbody tr td {
+    font-size: 0.938rem;
+    font-weight: 700;
+    color:#757575;
+    padding: 20px 0;
+    text-align:center;
+    border-right:1px solid #fff;
+}
+main .list tbody .choice {
+    border:3px solid #FF0066;
+}
+main .list tbody .choice,
+main .list tbody tr:nth-child(4) {
+    background-color: #E8E8E8;
+}
+main .list tbody .choice td {
+    color:#FF0066;
+}
+main .list tbody tr td:nth-child(1) {
+    text-align: left;
+    width: 308px;
+    padding:20px 0 20px 20px;
+}
+main .list tbody tr td:nth-child(2) {
+    width:145px;
+}
+main .list tbody tr td:nth-child(3) {
+    width:145px;
+}
+main .list tbody tr td:nth-child(4) {
+    width:128px;
+}
+main .list tbody tr td:nth-child(4) {
+    width:145px;
+}
+main .list tbody tr:nth-child(5) td:nth-child(1) {
+    border-radius: 0 0 0 20px;
+}
+main .list tbody tr:nth-child(5) td:nth-child(5) {
+    border-radius: 0 0 20px 0;
+}
