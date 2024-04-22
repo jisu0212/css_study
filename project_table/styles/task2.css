@@ -60,9 +60,6 @@ main .list tbody tr td:nth-child(3) {
 main .list tbody tr td:nth-child(4) {
     width:128px;
 }
-main .list tbody tr td:nth-child(4) {
-    width:145px;
-}
 main .list tbody tr:nth-child(5) td:nth-child(1) {
     border-radius: 0 0 0 20px;
 }
