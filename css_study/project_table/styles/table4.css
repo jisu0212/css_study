@@ -1,0 +1,52 @@
+main {
+    font-family:"Noto Sans KR", sans serif;
+    width:859px;
+    padding:60px 56px;
+    background-color:#f5f5f5;
+}
+main .info {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing:-0.4px;
+    color:#888;
+}
+main h1 {
+    font-weight:700;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.4px;
+    margin: 63px 0 10px 0;
+}
+main .tt {
+    width:100%;
+    font-size:1.25rem;
+    letter-spacing: -0.2px;
+    display: inline-block;
+    text-align: center;
+}
+main .tt thead {
+    text-align: center;
+    background-color: #00155E;
+    color:#fff;
+}
+main .tt thead tr {}
+main .tt thead tr th {
+    border:1px solid #aaa;
+    text-align: center;
+    padding:15px 0;
+    font-weight: 700;
+}
+main .tt thead tr th:nth-child(1) {width:231px;}
+main .tt thead tr th:nth-child(2) {width:312px;}
+main .tt thead tr th:nth-child(3) {width:203px;}
+main .tt tbody {height:324px;}
+main .tt tbody tr {}
+main .tt tbody tr td {
+    border:1px solid #aaa;
+}
+main .tt tbody tr td span {
+    color:#888;
+}
+main .tt tbody tr {}
+main .tt tbody tr td em {font-weight:700; line-height: 150%;}

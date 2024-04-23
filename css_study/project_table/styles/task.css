@@ -1,0 +1,96 @@
+main {font-family:"Noto Sans KR",sans-serif;
+padding:50px;
+}
+main h1 {
+    font-size: 2.5rem;
+    line-height: 130%;
+    text-align: center;
+    width:921px;
+}
+main h1 em {font-weight:700;}
+main p {
+    font-size: 1.25rem;
+    text-align: right;
+    margin: 23px 0 10px 0;
+    color:#808080;
+    width:921px;
+}
+main .tt {
+    letter-spacing:-0.4px;
+    border-top: 3px solid #adadad;
+    border-bottom: 3px solid #adadad;
+    width:921px;
+    text-align: center;
+    color:#676767;
+}
+/* 핑크색 라인 */
+main .tt thead tr th:nth-child(2) {border:5px solid #FF008A; border-bottom:0;}
+main .tt tbody tr td:nth-child(2) {
+    border-right:5px solid #FF008A;
+    border-left:5px solid #FF008A;
+}
+main .tt thead tr .seperate, main .tt tbody tr td:nth-child(1) {
+    background-color:#F7F7F7;
+}
+main .tt thead {
+    font-size: 1.563rem;
+    border-bottom: 1px solid #000;
+}
+main .tt thead tr th:nth-child(1) {width:230px;}
+main .tt thead tr th:nth-child(4) {border-right:0;}
+main .tt thead tr {}
+main .tt thead tr .seperate {
+    font-weight: 400;
+}
+main .tt thead tr th {
+    border-right:1px solid #adadad;
+    text-align: center;
+    font-weight: 700;
+    padding:25px 0;
+}
+main .tt thead tr th:nth-child(2) {
+    padding:0;
+}
+main .tt thead tr th .direct {
+    font-size: 1.25rem;
+}
+main .tt tbody tr td:nth-child(4) {border-right:0;}
+main .tt tbody {
+    font-size: 1.25rem;
+}
+main .tt tbody tr:nth-child(5) td:nth-child(2) {
+    border-bottom:5px solid #FF008A;
+}
+main .tt tbody tr {
+    border-bottom:1px solid #adadad;
+}
+main .tt tbody tr td {
+    border-right:1px solid #adadad;
+    padding:25px 0;
+    line-height:150%;
+}
+main .tt tbody tr:nth-child(1) td:nth-child(2) {
+    color:#FF008A;
+    padding:0;
+}
+main .tt tbody tr:nth-child(1) td:nth-child(2), main .tt tbody tr:nth-child(1) td:nth-child(3) {
+    width:230px;
+}
+main .tt tbody tr td .promotion {
+    color:#fff;
+    background-color:#FF008A;
+    padding:0 5px;
+    border-radius:5px;
+    margin-right:5px;
+    font-size: 0.938rem;
+}
+main .tt tbody tr td .price {
+    font-weight:900;
+}
+main .tt tbody tr .color {
+    color:#FF008A;
+    font-weight: 700;
+}
+main .tt tbody tr td del {
+    color:#676767;
+}
