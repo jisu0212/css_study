@@ -1,7 +1,7 @@
+body, html {background-color:#222;}
 main {
     font-family:"Noto Sans KR", sans-serif;
     width:1024px;
-    background-color:#222;
     margin:auto;
 }
 main > * {
@@ -20,7 +20,12 @@ main h1 a img {}
 main .part {
     text-align: center;
 }
-main .part .active,
+main .part .active {
+    border-bottom: 3px solid #1ED760;
+    width:73px;
+    padding-bottom:3px;
+    margin-right: 136px;
+}
 main .part a {
     font-size: 1.25rem;
     display:inline-block;
@@ -28,13 +33,6 @@ main .part a {
     color:#fff;
     margin-bottom: 52px;
 }
-main .part .active {
-    border-bottom: 3px solid #1ED760;
-    width:73px;
-    padding-bottom:3px;
-    margin-right: 136px;
-}
-main .part a {}
 main #Frm {}
 main #Frm .login {}
 main #Frm .login ul {}
@@ -42,6 +40,7 @@ main #Frm .login ul li {}
 main #Frm .login ul li input[name*=user] {
     width:100%;
     padding:25px 0 25px 40px;
+    letter-spacing: -0.2px;
     border-radius: 36.5px;
     border:0;
 }
@@ -77,7 +76,6 @@ main #Frm .login ul li button[type=submit] {
 main .forgot {
     letter-spacing: -0.2px;
     color:#fff;
-    display: inline-block;
+    display: block;
     text-align: center;
-    margin-bottom:314px;
 }
