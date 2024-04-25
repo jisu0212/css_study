@@ -1,0 +1,137 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.4px;
+    width:420px;
+    background-color: yellow;
+    margin:50px auto auto;
+    padding: 30px;
+}
+/* part1 시작 */
+main .join {
+    width: 360px;
+    background-color: pink;
+    margin-bottom: 30px;
+}
+main .join h1 {font-weight: 700; margin-bottom: 26px;}
+main .join p {
+    text-align: center;
+    font-size: 0.625rem;
+    margin-bottom: 10px;
+}
+main .join .login_site {
+    background-color: red;
+    text-align: center;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #d9d9d9;
+}
+main .join .login_site a {
+    margin-right:20px;
+}
+main .join .login_site a:nth-child(3) {margin:0;}
+main .join .login_site a img {}
+/* part2 폼 시작 */
+main #join_frm {}
+main #join_frm .user_info {
+    width: 360px;
+    background-color: lime;
+    margin-bottom:30px;
+}
+main #join_frm .user_info dl {}
+/* 이메일 */
+main #join_frm .user_info dl dt {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 13.94px;
+}
+main #join_frm .user_info dl dd {
+    font-size: 0.688rem;
+    color:#636363;
+    margin-bottom: 11.61px;
+}
+main #join_frm .user_info dl dd:nth-child(2) {
+    background-color: blue;
+    width:100%;
+    margin-bottom: 11.61px;
+}
+main #join_frm .user_info dl dd input[name=mail] {
+    line-height: 39.48px;
+    border-radius: 3px;
+    border-color:#d9d9d9;
+}
+main #join_frm .user_info dl dd input[name^=user] {
+    line-height: 39.48px;
+    border-radius: 3px;
+    border-color:#d9d9d9;
+    width:100%;
+}
+main #join_frm .user_info dl dd input[name=user_mail] {}
+main #join_frm .user_info dl dd img {}
+main #join_frm .user_info dl dd select {
+    padding: 14px 0;
+    border:1px solid #d9d9d9;
+    border-radius: 5px;
+    width:174.5px;
+}
+main #join_frm .user_info dl dd select option {}
+main #join_frm .user_info dl dd #mail_check {
+    width:100%;
+    line-height: 46.45px;
+    background-color: #F7F8FA;
+    border-radius: 5px;
+    border-color:#d9d9d9;
+    font-weight: 700px;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+/* 비밀번호 */
+main #join_frm .user_info dl dd input[name=user_pwd_check] {}
+main #join_frm .user_info dl dd input[name=user_name] {}
+/* 약관동의 시작 */
+main #join_frm .law_agree {
+    width: 360px; background-color: aqua;
+    margin-bottom:30px;
+}
+main #join_frm .law_agree h2 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 13.94px;
+}
+/* 약관동의 항목 시작 */
+main #join_frm .law_agree ul {}
+main #join_frm .law_agree ul li {}
+main #join_frm .law_agree ul li input[name^=agree] {}
+main #join_frm .law_agree ul li label[for=agree_all] {font-size: 0.75rem;}
+main #join_frm .law_agree ul li label[for=agree_all] em {}
+main #join_frm .law_agree ul li label[for=agree_all] span {}
+main #join_frm .law_agree ul li label[for=age] {}
+main #join_frm .law_agree ul li label[for=age] span {}
+main #join_frm .law_agree ul li label[for=use] {}
+main #join_frm .law_agree ul li label[for=use] span {}
+main #join_frm .law_agree ul li a {}
+main #join_frm .law_agree ul li a img {}
+main #join_frm .law_agree ul li label[for=personal_info] {}
+main #join_frm .law_agree ul li label[for=personal_info] span {}
+main #join_frm .law_agree ul li label[for=marketing] {}
+main #join_frm .law_agree ul li label[for=marketing] span {}
+main #join_frm .law_agree ul li label[for=agree_sms] {}
+main #join_frm .law_agree ul li label[for=agree_sms] span {}
+/* part3 join버튼 시작 */
+main .join_bottom {
+    background-color: green;
+    width:360px;
+}
+main .join_bottom #join_btn {
+    width:100%;
+    background-color: #35C5F0;
+    border-radius: 5px;
+    line-height: 47px;
+    border:none;
+    font-size: 0.875rem;
+    color:#fff;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+main .join_bottom p {
+    text-align: center;
+}
+main .join_bottom p a {font-weight: 700; text-decoration: underline; margin-left: 10px;}
