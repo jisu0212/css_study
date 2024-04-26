@@ -132,3 +132,75 @@
 1. **높이 설정하기 `부모 {height:px}`** : 부모 대상에 강제 높이를 설정해서 자식의 크기에 영향을 받지 않도록 한다. (권장하지 않음)
 2. **가상클래스선택자 생성하기 `부모:after {content''; display:block; clear:both;}`** : 부모의 자식 요소를 가상으로 생성하여 가상자식요소만큼 크기를 인식하도록 한다. 
 3. **영역 인식 `부모 {overflow:hidden;}`** : float로 인해 부유한 자식요소들을 잡아들여 영역을 다시 인식하도록 한다.
+## CSS Layout
+### float, flex
+* `float` : 형제 관계에 해당하는 block or inline tag 왼쪽, 오른쪽 정렬할 때 사용
+* 예 : ul-li *3개 정렬 `ul li {float:left}`
+* `flex` : 정렬하고자 하는 아이템의 부모한테 flex를 먼저 설정한다.
+* 예 : ul-li *3개 정렬 `ul {display:flex;}`
+* flex 설정 시 기본값 : 메인축(수평) 교차축(수직)
+* `display:flex` : 정렬대상의 부모 설정 속성값, 설정 시 해당 부모 기준 자식까지(자손X) flexible box layout으로 처리하겠다!
+### flex-direction (container에 적용하는 속성)
+* container 안의 item의 메인축 방향 설정한다.
+* `flex-direction:row`: 왼쪽 -> 오른쪽 수평축 (기본값)
+* `flex-direction:row-reverse` : 오른쪽 -> 왼쪽
+* `flex-direction:column` : 위 -> 아래 수직축 변경
+* `flex-direction:column-reverse` : 아래 ->위
+### flex-wrap (container에 적용하는 속성)
+* container 내부 items 줄바꿈 처리를 설정한다.
+`flex-wrap:wrap` : 자동 줄바꿈 (기본값)
+`flex-wrap:wrap-reverse` : 행 기준 역방향으로 자동 줄바꿈 처리
+`flex-wrap:nowrap` : 줄바꿈하지 않음(한 줄 처리) 가변너비에 따라 자동으로 % 크기 변경
+### flex-flow (container에 적용하는 속성)
+* flex-direction과 flex-wrap을 묶음으로 처리할 수 있다.
+* `flex-direction:column + flex-wrap:nowrap`일 경우 `flex-flow:column nowrap` 으로 작성
+### justify-content (container에 적용하는 속성)
+* 메인축의 정렬방법을 설정한다.
+* `justify-content:flex-start` : items의 시작점 container의 시작점으로 정렬
+* `justify-content:flex-end` : items의 시작점 container의 끝점으로 정렬
+* `justify-content:center` : items를 메인축 기준 container에서 가운데 정렬
+* `justify-content:space-between` : items를 container의 start, end 양끝 items를 배치하고 나머지는 고르게 정렬
+* `justify-content:space-around` : items를 container 안에서 균등한 여백을 포함하여 정렬
+### align-content (container에 적용하는 속성)
+* 교차축의 아이템이 2줄 이상일 경우 정렬방법
+* `align-content:stretch` : 기본값(교차축 기준으로 아이템 늘리기)
+* `align-content:flex-start` : 	container의 start지점 기준 item 정렬
+* `align-content:flex-end` : container의 end 지점 기준 item 정렬
+* `align-content:center` : container의 가운데 위치 기준 item 정렬
+* `align-content:space-between` : container의 start, end 에 양쪽 끝 맞추고 나머지 item 균등하게 정렬
+* `align-content:space-around` : container에서 모든 item 균등하게 정렬
+### align-items (container에 적용하는 속성)
+* 교차축의 아이템이 1줄일 경우 정렬방법
+* `align-items:stretch` : (기본값) 교차축 방향 시작지점에 맞춰서 정렬(start와 거의 차이 없음)
+* `align-items:flex-start` : 교차축 기준 container의 시작지점에 맞춰서 정렬(왼쪽 / 위)
+* `align-items:flex-end` : 교차축 기준 container의 종료지점에 맞춰서 정렬(오른쪽/아래)
+* `align-items:center` : 교차축 기준 container의 가운데지점에 맞춰서 정렬(수직중앙, 수평중앙)
+* `align-items:baseline` : 교차축 기준 container의 시작지점에 맞춰서 정렬(왼쪽 / 위)
+### align-self (item에 적용하는 속성)
+* container에 적용하는 align-items보다 우선순위가 높고 flex box의 교차축을 정렬한다.
+* `align-self:flex-start` : 교차축 기준 container의 start 시작 위치(top or left)
+* `align-self:flex-end` : 교차축 기준 container의 end 종료 위치(bottom or right)
+* `align-self:center` : 교차축 기준 container의 center 중심 위치(center, middle)
+* `align-self:baseline` : 교차축 기준 container의 baseline 위치(내용 크기에 따라 다름(기본은 start동일))
+### order (item에 적용하는 속성)
+* 아이템의 정렬 순서 설정
+* 숫자가 작은 순서가 첫번째로 배치된다.
+* `order:-1`, `order:0`, `order:1` 이렇게 셋이 있다면 -1, 0, 1을 가진 item 순으로 배치된다.
+### flex-grow
+*  container 너비에서 각 아이템의 증가 비율을 뜻한다.
+* 증가 비율이 클 수록 크게 표시된다.
+* 디바이스 너비를 item보다 크거나 같을 경우 적용된다.(커질 수록 차이가 나타남)
+* 디바이스 너비를 item보다 작게 설정하면 flex-grow 관계없이 일정 비율로 조정된다.
+### flex-shrink
+* container 너비에서 각 아이템의 감소 비율을 뜻한다.
+* 감소 비율이 클 수록 작게 표시된다.
+* 디바이스 너비를 item보다 작거나  같을 경우 적용된다.(작아질 수록 차이가 나타남)
+* 디바이스 너비를 item보다 크게 설정하면 flex-shrink 관계없이 일정 비율로 조정된다.
+### flex-basis
+* container 너비에서 각 아이템의 기본 크기를 뜻한다. (기본값 auto)
+* 요소에 width값이 적용되어 있는 경우 flex-basis를 설정하면 width값과 동일한 값으로 인식한다.
+* basis 너비보다 디바이스가 작아지변 가변형으로 변경된다.
+* auto는 내용 크기만큼 자동 인식된다.
+### flex
+* item에 적용하는 속성으로 증가(grow)/감소(shrink)/기본(basis)의 묶음 속성
+* 주의사항) basis값은 설정 안할 시 기본값 auto가 아닌 숫자 0 으로 인식한다.

@@ -1,0 +1,175 @@
+main {}
+/* 배경 공통&개별값 */
+main .bg {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .bg1 {
+    height:968px;
+    background-image:url(../images/bg.jpg);
+}
+/* 1.표지 */
+main .bg1 section {
+    width:1250px; margin:0 auto;
+}
+main .bg1 section h1 {}
+main .bg1 section h1 a {}
+main .bg1 section h1 a img {}
+main .bg1 section h2 {
+    font-size: 4.375rem;
+    line-height: 120%;
+    letter-spacing: -0.2px;
+    color:#fff;
+    text-align: center;
+    margin:80px 0 49px;
+}
+main .bg1 section h2 em {font-weight:700;}
+main .bg1 section .sponsor_link::after {
+    content:'';
+    background-image: url(../images/btn_right_arrow.svg);
+    background-repeat: no-repeat;
+    width:32px; height:32px;
+    display:inline-block;
+}
+main .bg1 section .sponsor_link {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    /*0% #FE9300 100%#FF7300 */
+    /* CSS 회전각도 단위 deg */
+    background:linear-gradient(90deg, #fe9300, #ff7300);
+    /* gradient 적용을 위해 background 통합 속성을 사용했을 때 해당 요소 추가 배경이미지 꾸미기를 원한다면 가상선택자(before, after)를 활용하는 것을 권장한다. */
+    color:#fff;
+    width:409px; line-height: 69px;
+    border-radius: 50px;
+    /* text-align: center; */
+    font-weight: 700;
+    font-size: 2.125rem;
+    margin:0 auto 160px;
+}
+main .bg1 section .sponsor_question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #050505; color:#fff;
+    font-size: 1.625rem;
+    width: 409px; line-height: 49px;
+    border-radius: 50px;
+    float:right;
+}
+main .bg1 section .sponsor_question::before,
+main .bg1 section .sponsor_question::after {
+    content:'';
+    background-repeat: no-repeat;
+    display:inline-block;
+    width:24px; height:24px;
+    background-size: 24px;
+}
+main .bg1 section .sponsor_question::before {
+    background-image: url(../images/icon_sms.svg);
+    padding-right: 5px;
+}
+main .bg1 section .sponsor_question::after {
+    background-image: url(../images/btn_right_arrow.svg);
+}
+/* 2-퀴즈 */
+main .bg2 {
+    height:601px;
+    background-image: url(../images/bg_2.jpg);
+}
+main .bg2 section {
+    width:1250px; margin:0 auto;
+    overflow:hidden;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+main .bg2 section .left {width:450px;}
+main .bg2 section .left h2 {
+    font-weight: 600;
+    font-size: 3.438rem;
+    letter-spacing: -0.1px;
+    margin:40px 0;
+    text-align: center;
+    color:#fff;
+}
+main .bg2 section .left #frm {}
+main .bg2 section .left #frm dl {
+    height:382px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+main .bg2 section .left #frm dl dt {
+    font-size: 1.25rem;
+    color:#fff;
+}
+main .bg2 section .left #frm dl dd {}
+main .bg2 section .left #frm dl dd input[name=percent] {display:none;}
+main .bg2 section .left #frm dl dd input[name=percent]:checked+label {
+    background-image: url(../images/quiz_checked.svg);
+}
+main .bg2 section .left #frm dl dd label[for*=percent] {
+    background-image: url(../images/quiz_unchecked.svg);
+    background-repeat: no-repeat;
+    padding-left: 48px;
+    font-size: 1.25rem;
+    color:#fff;
+}
+main .bg2 section .left #frm dl dd #check_btn {
+    background-color: #050505;
+    display:block;
+    width:100%;
+    line-height: 39px;
+    border-radius: 50px;
+    color:#fff;
+    border:0;
+}
+main .bg2 section .right {width:550px; margin-right: 100px;}
+main .bg2 section .right .status {}
+main .bg2 section .right .status h2 {
+    background-color: #ff7300;
+    width:100%;
+    line-height: 60px;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.625rem;
+    font-weight: 700;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+main .bg2 section .right .status h2::before {
+    content:'';
+    background-image: url(../images/icon_person.svg);
+    display:inline-block;
+    background-repeat: no-repeat;
+    width:42px; height:42px;
+}
+main .bg2 section .right .status .contents {
+    background-color: #fff;
+    width:100%;
+    line-height:197px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    padding-top: 30px;
+}
+main .bg2 section .right .status .contents em,
+main .bg2 section .right .status .contents span,
+main .bg2 section .right .status .contents strong {
+    font-weight: 700;
+}
+main .bg2 section .right .status .contents em {
+    font-size: 4.375rem;
+    color:#ff7300;
+}
+main .bg2 section .right .status .contents span {
+    font-size: 2.688rem;
+    color:#ff7300;
+}
+main .bg2 section .right .status .contents strong {
+    font-size: 2.688rem;
+}
+main .bg2 section .right p {color:#fff; font-size: 1.25rem;
+margin-top: 24px; float:right;}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex1 | 0426</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .container {
+            background-color: purple;
+            width:500px; height:500px;
+            /* flex 공부(부모-정렬대상의 부모) */
+            display:flex;
+            /* flex-direction:부모속성, 아이템정렬방향(메인축) */
+            /* flex-direction:column-reverse; */
+            /* flex-wrap:wrap-reverse; */ 
+            /* nowrap이 기본값 */
+            /* *wrap, nowrap 상황에 따라 사용 */
+            flex-flow:row wrap;
+            justify-content:center; /* flex-end와 row-reverse가 다른점은 역순이 안된다는 점 */
+            /* align-items: space-between; */
+            align-items:center;
+        }
+        .container .item {
+            /* flex 공부(자식-정렬대상) */
+            flex:1;
+            /* width:25%; */
+            /* 공통디자인 */
+            /* width:100px; */
+            height: 100px; line-height: 100px;;
+            text-align: center; font-size: 2rem;
+        }
+        .container .a {
+            /* flex:2; */
+            flex:4;
+            order:1;
+            background-color: aqua;
+        }
+        .container .b {
+            order:0;
+            background-color: lime;
+            align-self: flex-start;
+        }
+        .container .c {
+            order:-1;
+            background-color: yellow;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item a">
+            <div>
+                <p>a-1</p>
+                <p>a-2</p>
+            </div>
+        </div>
+        <div class="item b">b</div>
+        <div class="item c">c</div>
+        <div class="item b">b</div>
+        <div class="item c">c</div>
+        <div class="item b">b</div>
+        <div class="item b">b</div>
+    </div>
+</body>
+</html>
