@@ -4,14 +4,15 @@ main .bg {
     background-position: center;
     background-repeat: no-repeat;
 }
+main > .bg section {
+    width:1250px; margin:0 auto;
+}
 main .bg1 {
     height:968px;
     background-image:url(../images/bg.jpg);
 }
 /* 1.표지 */
-main .bg1 section {
-    width:1250px; margin:0 auto;
-}
+main .bg1 section {}
 main .bg1 section h1 {}
 main .bg1 section h1 a {}
 main .bg1 section h1 a img {}
@@ -74,29 +75,28 @@ main .bg1 section .sponsor_question::after {
 }
 /* 2-퀴즈 */
 main .bg2 {
-    height:601px;
     background-image: url(../images/bg_2.jpg);
 }
 main .bg2 section {
-    width:1250px; margin:0 auto;
     overflow:hidden;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-main .bg2 section .left {width:450px;}
+main .bg2 section > * {flex:1;}
+main .bg2 section .left {padding: 40px 0 80px;}
 main .bg2 section .left h2 {
     font-weight: 600;
     font-size: 3.438rem;
     letter-spacing: -0.1px;
-    margin:40px 0;
     text-align: center;
     color:#fff;
+    padding-bottom: 45px;
 }
 main .bg2 section .left #frm {}
 main .bg2 section .left #frm dl {
-    height:382px;
+    height:381px;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
@@ -104,6 +104,7 @@ main .bg2 section .left #frm dl {
 main .bg2 section .left #frm dl dt {
     font-size: 1.25rem;
     color:#fff;
+    line-height: 170%;
 }
 main .bg2 section .left #frm dl dd {}
 main .bg2 section .left #frm dl dd input[name=percent] {display:none;}
@@ -126,13 +127,15 @@ main .bg2 section .left #frm dl dd #check_btn {
     color:#fff;
     border:0;
 }
-main .bg2 section .right {width:550px; margin-right: 100px;}
-main .bg2 section .right .status {}
+main .bg2 section .right {margin: auto 0 auto 144px;}
+main .bg2 section .right .status {
+    width:100%;
+    border-radius: 10px;
+    overflow:hidden;
+}
 main .bg2 section .right .status h2 {
     background-color: #ff7300;
-    width:100%;
     line-height: 60px;
-    border-radius: 10px 10px 0 0;
     font-size: 1.625rem;
     font-weight: 700;
     color:#fff;
@@ -149,9 +152,7 @@ main .bg2 section .right .status h2::before {
 }
 main .bg2 section .right .status .contents {
     background-color: #fff;
-    width:100%;
     line-height:197px;
-    border-radius: 0 0 10px 10px;
     text-align: center;
     padding-top: 30px;
 }
@@ -159,17 +160,11 @@ main .bg2 section .right .status .contents em,
 main .bg2 section .right .status .contents span,
 main .bg2 section .right .status .contents strong {
     font-weight: 700;
-}
-main .bg2 section .right .status .contents em {
-    font-size: 4.375rem;
     color:#ff7300;
-}
-main .bg2 section .right .status .contents span {
-    font-size: 2.688rem;
-    color:#ff7300;
-}
-main .bg2 section .right .status .contents strong {
     font-size: 2.688rem;
 }
+main .bg2 section .right .status .contents em {font-size: 4.375rem;}
+main .bg2 section .right .status .contents span {color:#ff7300;}
+main .bg2 section .right .status .contents strong {color:#050505;}
 main .bg2 section .right p {color:#fff; font-size: 1.25rem;
 margin-top: 24px; float:right;}
