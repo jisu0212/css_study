@@ -126,6 +126,17 @@ main .bg2 section #quiz .frm ul .list label[for=point] {}
 main .bg2 section #quiz .frm ul .list label[for=plus_one] {}
 main .bg2 section #quiz .frm ul .list label[for=discount] {}
 main .bg2 section #quiz .frm ul .list label[for=rullet] {}
+main .bg2 section #quiz .frm ul .btn {}
+main .bg2 section #quiz .frm ul .btn #check_btn {
+    background-color: #050505;
+    line-height: 61px; width:523px;
+    border-radius: 30px;
+    border:0;
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.625rem;
+    margin:60px 0 0 67px;
+}
 main .bg2 section .right {width:397px;}
 main .bg2 section .right p {
     font-size: 1.25rem;

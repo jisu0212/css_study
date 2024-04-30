@@ -3,15 +3,40 @@ main {}
 main .bg {
     background-position: center;
     background-repeat: no-repeat;
+    background-size:cover;
+    /* bg cover란? 배경이미지가 적용된 요소의 크기에 자동으로 가로세로 크기를 맞춰 채운다는 뜻 */
 }
 main > .bg section {
     width:1250px; margin:0 auto;
 }
+main .bg section .sub_title {
+    font-weight: 600;
+    font-size: 3.438rem;
+    letter-spacing: -0.1px;
+    color:#fff;
+    line-height: 1.2;
+}
+main .bg section .sponsor_link {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    /*0% #FE9300 100%#FF7300 */
+    /* CSS 회전각도 단위 deg */
+    background:linear-gradient(90deg, #fe9300, #ff7300);
+    /* gradient 적용을 위해 background 통합 속성을 사용했을 때 해당 요소 추가 배경이미지 꾸미기를 원한다면 가상선택자(before, after)를 활용하는 것을 권장한다. */
+    color:#fff;
+    width:409px; line-height: 69px;
+    border-radius: 50px;
+    /* text-align: center; */
+    font-weight: 700;
+    font-size: 2.125rem;
+    margin:0 auto 160px;
+}
+/* 1.표지 */
 main .bg1 {
     height:968px;
     background-image:url(../images/bg.jpg);
 }
-/* 1.표지 */
 main .bg1 section {}
 main .bg1 section h1 {}
 main .bg1 section h1 a {}
@@ -31,22 +56,6 @@ main .bg1 section .sponsor_link::after {
     background-repeat: no-repeat;
     width:32px; height:32px;
     display:inline-block;
-}
-main .bg1 section .sponsor_link {
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    /*0% #FE9300 100%#FF7300 */
-    /* CSS 회전각도 단위 deg */
-    background:linear-gradient(90deg, #fe9300, #ff7300);
-    /* gradient 적용을 위해 background 통합 속성을 사용했을 때 해당 요소 추가 배경이미지 꾸미기를 원한다면 가상선택자(before, after)를 활용하는 것을 권장한다. */
-    color:#fff;
-    width:409px; line-height: 69px;
-    border-radius: 50px;
-    /* text-align: center; */
-    font-weight: 700;
-    font-size: 2.125rem;
-    margin:0 auto 160px;
 }
 main .bg1 section .sponsor_question {
     display: flex;
@@ -87,11 +96,7 @@ main .bg2 section {
 main .bg2 section > * {flex:1;}
 main .bg2 section .left {padding: 40px 0 80px;}
 main .bg2 section .left h2 {
-    font-weight: 600;
-    font-size: 3.438rem;
-    letter-spacing: -0.1px;
     text-align: center;
-    color:#fff;
     padding-bottom: 45px;
 }
 main .bg2 section .left #frm {}
@@ -168,3 +173,220 @@ main .bg2 section .right .status .contents span {color:#ff7300;}
 main .bg2 section .right .status .contents strong {color:#050505;}
 main .bg2 section .right p {color:#fff; font-size: 1.25rem;
 margin-top: 24px; float:right;}
+/* bg3 */
+main .bg3 {background-image: url(../images/bg_3.jpg);}
+main .bg3 section {padding:153px 0 154px; text-align: center;}
+main .bg3 section .sub_title {color:#000;}
+main .bg3 section #video {width:900px; margin:70px 0;}
+main .bg3 section .sponsor_link {margin-bottom: 0;}
+/* bg4 */
+main .bg4 {
+    background-image: url(../images/bg_4.jpg);
+}
+main .bg4 section {}
+main .bg4 section .sub_title {}
+main .bg4 section .sub_title span {}
+main .bg4 section .sub_title+p {}
+main .bg4 section p:last-child {}
+main .bg4 section p:last-child img {}
+/* bg5 */
+main .bg5 {background-image: url(../images/bg_5.jpg);}
+main .bg5 section {padding:120px 0 235px;}
+main .bg5 section .sub_title {color:#050505; text-align: center;}
+main .bg5 section > p {
+    text-align: center;
+    font-size: 1.625rem;
+    line-height: 1.2;
+    margin:30px 0 153px;
+}
+main .bg5 section .warning {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+main .bg5 section .warning .warning_1 {}
+main .bg5 section .warning .warning_1 .top {
+    background-image: url(../images/box_img1.jpg);
+}
+main .bg5 section .warning .warning_1 .top h3 {}
+main .bg5 section .warning .warning_1 .top p {}
+main .bg5 section .warning .warning_1 .btm {}
+main .bg5 section .warning .warning_2 .top {
+    background-image: url(../images/box_img2.jpg);
+}
+main .bg5 section .warning .warning_2 .top h3 {}
+main .bg5 section .warning .warning_2 .top p {}
+main .bg5 section .warning .warning_2 .btm {}
+main .bg5 section .warning .warning_3 {}
+main .bg5 section .warning .warning_3 .top {
+    background-image: url(../images/box_img3.jpg);
+}
+main .bg5 section .warning .warning_3 .top h3 {}
+main .bg5 section .warning .warning_3 .top p {}
+main .bg5 section .warning .warning_3 .btm {}
+/* bg5 그룹선택자(공통) */
+main .bg5 section .warning .warning_1 .top,
+main .bg5 section .warning .warning_2 .top,
+main .bg5 section .warning .warning_3 .top {
+    width:387px; height:320px;
+    padding: 60px 0 167px;
+}
+main .bg5 section .warning .warning_1 .top h3,
+main .bg5 section .warning .warning_2 .top h3,
+main .bg5 section .warning .warning_3 .top h3 {
+    font-size: 2.688rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color:#fff;
+}
+main .bg5 section .warning .warning_1 .top p,
+main .bg5 section .warning .warning_2 .top p,
+main .bg5 section .warning .warning_3 .top p {
+    font-size: 1.625rem;
+    line-height: 1.2;
+    color:#fff;
+    margin-top: 10px;
+}
+main .bg5 section .warning .warning_1 .btm,
+main .bg5 section .warning .warning_2 .btm,
+main .bg5 section .warning .warning_3 .btm {
+    background-color: #fff;
+    width:387px; height:250px;
+    padding:10px 0 36px;
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+/* bg6 */
+main .bg6 {background-image: url(../images/bg_6.jpg);}
+main .bg6 section {}
+main .bg6 section .sub_title {}
+main .bg6 section .sub_title span {}
+main .bg6 section .sub_title+p {}
+main .bg6 section p:last-child {}
+main .bg6 section p:last-child img {}
+/* 4, 6 그룹선택자 */
+main .bg4 section,
+main .bg6 section {padding: 158px 0 194px;}
+main .bg4 section .sub_title,
+main .bg6 section .sub_title {}
+main .bg4 section .sub_title span,
+main .bg6 section .sub_title span {
+    background-color: #fff;
+    color:#2E3148;
+    display:inline-block;
+    padding:10px 0;
+    font-weight: 600;
+    font-size: 3.438rem;
+    letter-spacing: -0.1px;
+}
+main .bg4 section .sub_title+p,
+main .bg6 section .sub_title+p {
+    font-size: 2.125rem; font-weight: 700;
+    line-height: 1.2; color:#fff; margin:30px 0 90px;
+}
+main .bg4 section p:last-child,
+main .bg6 section p:last-child {}
+main .bg4 section p:last-child img,
+main .bg6 section p:last-child img {}
+/* bg7 */
+main .bg7 {background-image: url(../images/bg_7.jpg);}
+main .bg7 section {text-align: center; padding:138px 0;}
+main .bg7 section h2 {
+    font-size: 4.375rem;
+    font-weight: 700;
+}
+main .bg7 section p {
+    font-size: 2.125rem;
+    line-height: 1.5;
+    margin-top: 80px;
+}
+/* bg8 */
+main .bg8 {background-image: url(../images/bg_8.jpg);}
+main .bg8 section {padding:90px 0 116px;}
+main .bg8 section h2 {
+    font-size: 2.688rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 40px;
+}
+main .bg8 section ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .bg8 section ul .left {
+    display:flex;
+    flex-direction: column;
+}
+main .bg8 section ul .left .first {
+    background-image: url(../images/wwf_img1.jpg);
+    width:615px; height:270px;
+}
+main .bg8 section ul .left .first .sub_bg {}
+main .bg8 section ul .left .first .sub_bg h3 {}
+main .bg8 section ul .left .first .sub_bg p {}
+main .bg8 section ul .left .second {
+    background-image: url(../images/wwf_img2.jpg);
+    width:615px; height:270px;
+    margin-top: 20px;
+}
+main .bg8 section ul .left .second .sub_bg {}
+main .bg8 section ul .left .second .sub_bg h3 {}
+main .bg8 section ul .left .second .sub_bg p {}
+main .bg8 section ul .right {
+    background-image: url(../images/wwf_img3.jpg);
+    width:615px; height:560px;
+}
+main .bg8 section ul .right .sub_bg {}
+main .bg8 section ul .right .sub_bg h3 {}
+main .bg8 section ul .right .sub_bg p {}
+/* bg8 그룹선택자 */
+main .bg8 section ul .left .first,
+main .bg8 section ul .left .second,
+main .bg8 section ul .right {
+    display:flex;
+    align-items: self-end;
+}
+main .bg8 section ul .left .first .sub_bg,
+main .bg8 section ul .left .second .sub_bg,
+main .bg8 section ul .right .sub_bg {
+    background-color: #2E3148cc;
+    padding:20px 34px 20px 20px;
+    color:#fff;
+    margin-bottom: 15px;
+}
+main .bg8 section ul .left .first .sub_bg h3,
+main .bg8 section ul .left .second .sub_bg h3,
+main .bg8 section ul .right .sub_bg h3 {
+    margin-bottom: 10px;
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+main .bg8 section ul .left .first .sub_bg p,
+main .bg8 section ul .left .second .sub_bg p, 
+main .bg8 section ul .right .sub_bg p {
+    font-size: 1.625rem;
+    line-height: 1.2;
+}
+/* bg9 */
+main .bg9 {
+    background-image: url(../images/bg_9.jpg);
+}
+main .bg9 section {}
+main .bg9 section h2 {
+    font-size: 2.688rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color:#fff;
+}
+main .bg9 section .sponsor_link {}
+main .bg9 section ul {
+    display: flex;
+    flex-direction: row;
+}
+main .bg9 section ul li {}
+main .bg9 section ul li img {}
+main .bg9 section ul li span {}
+main .bg9 section p {}
