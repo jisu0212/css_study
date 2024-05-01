@@ -1,0 +1,146 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+}
+/* 공통 디자인 */
+main .bg {
+    width:1920px;
+    margin:0 auto;
+    background-repeat: no-repeat; 
+}
+main > .bg section {
+    width:1250px; margin:0 auto;
+}
+/* bg1 */
+main .bg1 {
+    background-image: url(../images/bg1.jpg);
+    height:1000px;
+}
+main .bg1 section {}
+main .bg1 section .logo {
+    text-align: right;
+    padding: 50px 0 257px;
+}
+main .bg1 section .logo a {}
+main .bg1 section .logo a img {}
+main .bg1 section .sub_title {
+    color:#050505;
+    font-size:2.125rem;
+    margin-bottom: 166px;
+}
+main .bg1 section .explain {
+    font-size: 1.25rem;
+    line-height: 170%;
+    color:#fff;
+    text-align: right;
+}
+main .bg1 section .btn {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 191px 0 70px;
+}
+main .bg1 section .btn a {
+    line-height: 54px; width:246px;
+    background-color: #050505;
+    color:#fff;
+    border-radius: 30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main .bg1 section .btn a:nth-child(2) {
+    color:#050505;
+    background-color: #fff;
+}
+main .bg1 section .btn a:nth-child(1)::before,
+main .bg1 section .btn a:nth-child(2)::before {
+    content:'';
+    background-repeat: no-repeat;
+    display: inline-block;
+    width:24px; height:24px;
+    padding-right: 10px;
+}
+main .bg1 section .btn a:nth-child(1)::before {
+    background-image: url(../images/icon_download.svg);
+}
+main .bg1 section .btn a:nth-child(2)::before {
+    background-image: url(../images/icon_homepage.svg);
+}
+/* bg2 */
+main .bg2 {
+    background-image: url(../images/bg2.jpg);
+}
+main .bg2 section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:120px 0;
+}
+main .bg2 section #quiz {}
+main .bg2 section #quiz .frm {}
+main .bg2 section #quiz .frm ul {}
+main .bg2 section #quiz .frm ul li {}
+main .bg2 section #quiz .frm ul li {
+    font-size: 1.625rem;
+    font-weight: 600;
+}
+main .bg2 section #quiz .frm ul li:first-child {
+    margin-bottom: 60px;
+}
+main .bg2 section #quiz .frm ul li em {
+    font-size: 2.688rem;
+    font-weight: 700;
+    color:#0078FF;
+}
+main .bg2 section #quiz .frm ul .answer {
+    display: flex;
+    flex-direction: row;
+}
+main .bg2 section #quiz .frm ul .answer .title_a {
+    font-size: 2.688rem;
+    color:#2A2B2F;
+}
+main .bg2 section #quiz .frm ul .answer .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 400;
+    margin-left: 25px;
+    width:389px; height:264px;
+}
+main .bg2 section #quiz .frm ul .list input[name*=event] {display:none;}
+main .bg2 section #quiz .frm ul .list input[name*=event]:checked+label {background-image: url(../images/checked.svg);}
+main .bg2 section #quiz .frm ul .list label {
+    background-image: url(../images/unchecked.svg);
+    background-repeat: no-repeat;
+    padding-left: 49px;
+}
+main .bg2 section #quiz .frm ul .list label[for=point] {}
+main .bg2 section #quiz .frm ul .list label[for=plus_one] {}
+main .bg2 section #quiz .frm ul .list label[for=discount] {}
+main .bg2 section #quiz .frm ul .list label[for=rullet] {}
+main .bg2 section #quiz .frm ul .btn {}
+main .bg2 section #quiz .frm ul .btn #check_btn {
+    background-color: #050505;
+    line-height: 61px; width:523px;
+    border-radius: 30px;
+    border:0;
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.625rem;
+    margin:60px 0 0 67px;
+}
+main .bg2 section .right {width:397px;}
+main .bg2 section .right p {
+    font-size: 1.25rem;
+    line-height: 170%;
+    text-align: center;
+}
+main .bg2 section .right p img {}
+main .bg2 section .right p strong {font-weight: 700;}
+/* bg3 */
