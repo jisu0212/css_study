@@ -1,0 +1,97 @@
+#app {
+    width:375px; height:812px;
+    margin:30px auto;
+    border:1px solid black;
+    padding-top:42px;
+}
+/* top, logo */
+#app .top {
+    padding:16px;
+    border:1px solid black;
+}
+#app .top .prev {
+    display:inline-block;
+    overflow:hidden;
+    width:24px; height:24px;
+    background:gray;
+}
+#app .top .prev img {}
+#app h1 {
+    margin:50px auto 50px 102px;
+    width:170px; height:43px;
+    background: gray;
+}
+#app h1 a {}
+#app h1 a img {}
+#app .keyboard_g {
+    border:1px solid black;
+    margin:0 0 16px; padding:0 16px;
+    /* text-align: right; */
+    display: flex; /* div(container) a(item) */
+    justify-content: flex-end;
+}
+#app .keyboard_g a {
+    font-size: 0.75rem;
+    display: flex; /* a(container) 글자, img(item) */
+    align-items: flex-start;
+}
+#app .keyboard_g a img {
+    margin-left:6px;
+    width:16px; height:16px;
+    background: gray;
+}
+/* form */
+#app #login_frm {
+    margin:0 16px;
+}
+#app #login_frm .login_g {}
+#app #login_frm .login_g ul {
+    border:1px solid black;
+    border-radius: 5px;
+    overflow:hidden;
+    margin:0 0 16px;
+}
+#app #login_frm .login_g ul li {}
+#app #login_frm .login_g ul li:first-child {
+    border-bottom: 1px solid black;
+}
+/* input,button은 inline 요소지만 css에서 크기를 인식한다. */
+#app #login_frm .login_g ul li input[name^=user] {
+    width:100%;
+    padding: 16px 16px 16px 56px;
+    border:0; outline:none;
+}
+#app #login_frm .login_g ul li input[name$=id] {}
+#app #login_frm .login_g ul li input[name$=pw] {}
+#app #login_frm .login_g .btn {}
+#app #login_frm .login_g .btn #login_btn {
+    width:100%; line-height:51px;
+    border-radius: 5px;
+}
+/* 로그인 오류 시 출력 메세지(기본 숨김) */
+#app #login_frm .login_g .error_message {
+    font-size: 0.75rem;
+    margin: 0 0 16px;
+    display:none; /* 초기 숨김 */
+}
+/* 찾기, 가입 */
+#app .search_join {
+    border:1px solid black;
+    margin-top: 30px;
+    text-align: center;
+    padding:0 16px;
+    display:flex;
+    justify-content: center;
+}
+#app .search_join a {
+    font-size: 0.75rem;
+    display:flex;
+    align-items: center;
+}
+#app .search_join a::after {
+    content:''; display:block;
+    width:1px; height:10px;
+    background-color: #000;
+    margin:0 8px;
+}
+#app .search_join a:last-child::after {display:none;}
