@@ -5,10 +5,33 @@ main {
 main .bg {
     width:1920px;
     margin:0 auto;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 main > .bg section {
     width:1250px; margin:0 auto;
+}
+main > .bg section .btn a {
+    line-height: 91px; width:318px;
+    background-color: #050505;
+    color:#fff;
+    border-radius: 50px;
+    font-size: 1.625rem;
+    font-weight: 700;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main .bg section .btn a::before {
+    content:'';
+    background-repeat: no-repeat;
+    display: inline-block;
+    width:36px; height:36px;
+    padding-right: 10px;
+}
+main .bg section .btn a:nth-child(1)::before {
+    background-image: url(../images/icon_download.svg);
 }
 /* bg1 */
 main .bg1 {
@@ -43,32 +66,10 @@ main .bg1 section .btn {
     justify-content: space-between;
     margin-top:124px;
 }
-main .bg1 section .btn a {
-    line-height: 54px; width:246px;
-    background-color: #050505;
-    color:#fff;
-    border-radius: 30px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+main .bg1 section .btn a {}
 main .bg1 section .btn a:nth-child(2) {
     color:#050505;
     background-color: #fff;
-}
-main .bg1 section .btn a:nth-child(1)::before,
-main .bg1 section .btn a:nth-child(2)::before {
-    content:'';
-    background-repeat: no-repeat;
-    display: inline-block;
-    width:24px; height:24px;
-    padding-right: 10px;
-}
-main .bg1 section .btn a:nth-child(1)::before {
-    background-image: url(../images/icon_download.svg);
 }
 main .bg1 section .btn a:nth-child(2)::before {
     background-image: url(../images/icon_homepage.svg);
@@ -154,6 +155,58 @@ main .bg3 section {padding:213px 0;}
 main .bg3 section iframe {
     width:1250px; height:703px;
 }
-main .bg3 section iframe .contents {}
-main .bg3 section .contents h2 {color:#fff;}
-main .bg3 section .contents p {color:#fff;}
+main .bg3 section .contents {
+    color:#fff;
+    text-align: center;
+    margin: 109px 0 0;
+}
+main .bg3 section .contents h2 {
+    font-size: 3.438rem;
+    line-height: 120%;
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+main .bg3 section .contents p {
+    font-size: 1.625rem;
+    line-height: 170%;
+}
+/* bg4 */
+main .bg4 {
+    background-image: url(../images/bg4.jpg);
+}
+main .bg4 section {
+    padding:156px 0 141px;
+}
+main .bg4 section h2 {
+    color:#fff;
+    font-size: 4.375rem;
+    font-weight: 700;
+    line-height: 170%;
+}
+main .bg4 section .btn {
+    background-color: aqua;
+    text-align: center;
+}
+main .bg4 section .btn a {
+    border:2px solid #fff;
+}
+main .bg4 section p {}
+main .bg4 section p img {}
+/* bg5 */
+main .bg5 {
+    background-image: url(../images/bg5.jpg);
+}
+main .bg5 section {
+    display: flex;
+    justify-content: space-between;
+    padding:150px 0 158px;
+}
+main .bg5 section ul {
+    width: calc(100% / 2);
+    text-align: center;
+}
+main .bg5 section li {}
+main .bg5 section li h2 {}
+main .bg5 section li h3 {}
+main .bg5 section li p {}
+main .bg5 section li img {}
