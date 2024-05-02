@@ -5,10 +5,47 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css start</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <title>홍지수 | 프로젝트 모음</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .bg {
+            height:400px; background-color:#4FC0FF;
+            padding-top:120px;
+            text-align: center;
+        }
+        .bg .lang {font-size: 1.875rem;}
+        .bg h1 {font-size: 3rem; font-weight: 700; color:#fff; margin:20px 0 30px;}
+        .bg .date {font-size: 1.25rem;}
+        .list {
+            padding:10px;
+            width:630px; margin:20px auto 0;
+            display:flex; flex-flow:row wrap;
+        }
+        .list a {
+            width:calc((100% - 10px) / 2); border-bottom:1px solid #000;
+            text-align: center; padding:16px 12px;
+        }
+        .list a:nth-child(odd) {margin-right:10px;}
+    </style>
 </head>
 <body>
+    <div class="bg">
+        <p class="lang">HTML, CSS</p>
+        <h1>홍지수 프로젝트</h1>
+        <p class="date">24.03.19 ~ 24.08.02</p>
+    </div>
+    <div class="list">
+        <a href="./project_spc/index.html" target="_blank">SPC삼립 24/04/17</a>
+        <a href="./landing_project1/index.html" target="_blank">북극곰-랜딩페이지 24/04/30</a>
+        <a href="./naver_login/index.html" target="_blank">네이버로그인 24/05/02</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+    </div>
     <!-- css표현대상 HTML -->
     <!-- <div id="top">
         <main>
@@ -16,7 +53,7 @@
             <p>contents</p>
         </main>
     </div> -->
-    <div class="title">
+<!--     <div class="title">
         <h1>Contents</h1>
         <div class="txt_wrap">
             <div class="txt_1">
@@ -24,9 +61,9 @@
                 <p class="name">스트릿 우먼 파이터2</p>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- 선택자연습-2 -->
-    <div id="weather">
+<!--     <div id="weather">
         <h1>날씨</h1>
         <p class="area">부평구 부평동</p>
         <p class="temperature">15.4도</p>
@@ -38,9 +75,9 @@
         <div class="result">
             이동성 고기압의 영향을 주로 받겠으나 일시적으로 상층 찬 공기의 영향을 받을 때가 있습니다.
         </div>
-    </div>
+    </div> -->
     <!-- 선택자연습-3 -->
-    <div id="news">
+<!--     <div id="news">
         <a href="#">메리츠화재</a>
         <div class="box">
             <a href="#">
@@ -49,9 +86,9 @@
             </a>
         </div>
         <p>N포인트 최대 3만원<span>(2회차 납입 시</span></p>
-    </div>
+    </div> -->
     <!-- 선택자연습-4 -->
-    <div id="papago">
+<!--     <div id="papago">
         <nav>
             <a href="#">웹 사이트 번역</a>
             <a href="#">문서 번역</a>
@@ -64,6 +101,6 @@
             <a href="#">번역하기</a>
         </main>
         <a href="#">네이버 사전</a>
-    </div>
+    </div> -->
 </body>
 </html>
