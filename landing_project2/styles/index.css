@@ -16,17 +16,19 @@ main .bg1 {
     height:1000px;
 }
 main .bg1 section {}
-main .bg1 section .logo {
-    text-align: right;
-    padding: 50px 0 257px;
+main .bg1 section .title {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding:238px 0 10px;
 }
-main .bg1 section .logo a {}
-main .bg1 section .logo a img {}
-main .bg1 section .sub_title {
+main .bg1 section .title .sub_title {
     color:#050505;
-    font-size:2.125rem;
-    margin-bottom: 166px;
+    font-size:1.563rem;
 }
+main .bg1 section .title .logo {}
+main .bg1 section .title .logo a {}
+main .bg1 section .title .logo a img {}
 main .bg1 section .explain {
     font-size: 1.25rem;
     line-height: 170%;
@@ -38,7 +40,6 @@ main .bg1 section .btn {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 191px 0 70px;
 }
 main .bg1 section .btn a {
     line-height: 54px; width:246px;
