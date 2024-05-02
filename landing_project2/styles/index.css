@@ -34,12 +34,14 @@ main .bg1 section .explain {
     line-height: 170%;
     color:#fff;
     text-align: right;
+    margin-top:276px;
 }
 main .bg1 section .btn {
     width:100%;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top:124px;
 }
 main .bg1 section .btn a {
     line-height: 54px; width:246px;
@@ -145,3 +147,13 @@ main .bg2 section .right p {
 main .bg2 section .right p img {}
 main .bg2 section .right p strong {font-weight: 700;}
 /* bg3 */
+main .bg3 {
+    background-image: url(../images/bg3.jpg);
+}
+main .bg3 section {padding:213px 0;}
+main .bg3 section iframe {
+    width:1250px; height:703px;
+}
+main .bg3 section iframe .contents {}
+main .bg3 section .contents h2 {color:#fff;}
+main .bg3 section .contents p {color:#fff;}
