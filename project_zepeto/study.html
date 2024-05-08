@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEPETO</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        @media screen and (max-width:1300px) {
+            header nav {display:none;}
+            main .visual video {width:1300px;}
+            main .creater {width:100%;}
+        }
+        @media screen and(max-width:760px) {
+            header h1 {width:225.75px;}
+            main .creater .img {width:100%;}
+            main .creater ul {flex-flow: row wrap;}
+            main .creater ul li {width:calc(100% / 2);}
+            main .creater ul li:last-child {width:100%;}
+        }
+    </style>
+    <style>
+        /* 반응형 웹 */
+        header {
+            height:80px;
+            padding: 0 16px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+        }
+        header h1 {width:301px;}
+        header h1 a {}
+        header h1 a img {width:100%;}
+        header nav {}
+        header nav a {
+            font-size: 1.25rem;
+            color:#fff;
+            margin-right: 24px;
+        }
+        header nav a:last-child {margin:0;}
+        header nav a:hover {color:#bbb;}
+        header .snb {
+            display: flex;
+        }
+        header .snb a:first-child {color:#fff;
+        border:2px solid #fff; border-radius: 5px;
+        line-height: 39px;
+        padding:0 10px;
+        margin-right:24px;
+        }
+        header .snb a:first-child:hover {border-color: #ff0;}
+        header .snb a:last-child {width:36px; display: inline-block;}
+        header .snb a img {width:100%; filter:invert(1);}
+        header .snb a:last-child:hover img {filter: invert(1) opacity(50%);}
+        main {}
+        main .visual {
+            height:720px;
+            overflow:hidden;
+            position:relative;
+        }
+        main .visual video {width:100%;}
+        main .visual .visual_title {
+            position:absolute; left:0; top:0;
+            width:100%;
+            text-align: center;
+            padding-top:211px ;
+        }
+        main .visual .visual_title h2 {
+            font-weight:700;
+            font-size: 3rem;
+            color:#fff;
+            line-height: 1.2;
+        }
+        main .visual .visual_title .start_link {
+            background-color: #000;
+            color:#fff;
+            border-radius: 10px; width:160px; line-height: 54px;
+            display: inline-block;
+            margin-top: 52px;
+        }
+        main .creater {
+            border: 3px solid red;
+            width:1300px;
+            margin:0 auto;
+            padding:150px 0 0;
+            text-align: center; /* 자식,자손 글자 공통정렬 */
+        }
+        main .creater .creater_title {}
+        main .creater .creater_title h2 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        main .creater .creater_title p {
+            font-size:1.25rem;
+            line-height: 1.5;
+            margin:55px 0;
+        }
+        main .creater .img {
+            width:697px;
+            text-align: center;
+            margin: 0 auto 55px;
+        }
+        main .creater .img img {
+            width:100%;
+        }
+        main .creater ul {
+            display:flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        main .creater ul li {
+            width:calc(100% / 3);
+            height:94px;
+            text-align: center;
+        }
+        main .creater ul li h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+        main .creater ul li p {
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="#"><img src="./images/logo_zepeto_white.png" alt="zepeto"></a></h1>
+        <nav>
+            <a href="#">비즈니스</a>
+            <a href="#">콘텐츠</a>
+            <a href="#">크리에이터 프로그램</a>
+            <a href="#">가이드</a>
+            <a href="#">지원</a>
+        </nav>
+        <div class="snb">
+            <a href="#">콘텐츠 관리</a>
+            <a href="#"><img src="./images/bell-regular.svg" alt="알림서비스"></a>
+        </div>
+    </header>
+    <main>
+        <div class="visual">
+            <video src="./bg.mp4" autoplay muted loop></video>
+            <div class="visual_title">
+                <h2>상상하는 모든 것.<br>제페토 스튜디오에서</h2>
+                <a href="#" class="start_link">시작하기</a>
+            </div>
+        </div>
+        <div class="creater">
+            <div class="creater_title">
+                <h2>크리에이터를 위한 제페토.</h2>
+                <p>제페토 크리에이터는 제페토 세상의 모든 것을 직접 만들 수 있습니다.<br>전 세계 3억 유저에게 당신의 아이디어를 보여주세요!</p>
+            </div>
+            <div class="img"><img src="./images/img_creators.png" alt=""></div>
+            <ul>
+                <li>
+                    <h3>6800만</h3>
+                    <p>스튜디오 아이템 판매량</p>
+                </li>
+                <li>
+                    <h3>230만</h3>
+                    <p>스튜디오 크리에이터 수</p>
+                </li>
+                <li>
+                    <h3>3억</h3>
+                    <p>제페토 가입자 수</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
