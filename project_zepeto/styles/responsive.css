@@ -5,6 +5,11 @@
     header nav {display:none;}
     main .visual video {width:1300px;}
     main .creater {width:100%;}
+    main .world {width:100%;}
+    main .world .zepeto_world {width:100%;}
+    main .million {width:100%;}
+    main .million .contents img {width:calc((100% / 4) - 10PX);}
+    main .million .contents img:last-child {display: none;}
 }/* 761~1300 */
 @media screen and (max-width:760px){
     header h1 {width:225.75px;}
@@ -12,4 +17,21 @@
     main .creater ul {flex-flow: row wrap;}
     main .creater ul li {width:calc(100% / 2);}
     main .creater ul li:last-child {width:100%;}
+    main .world .zepeto_world .list {
+        flex-flow:column wrap;
+        justify-content: space-between;
+    }
+    main .world .zepeto_world .list dl {
+        padding:0 50px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width:100%; height:150px;
+    }
+    main .world .zepeto_world .list dl:nth-child(2) {margin:10px 0;}
+    main .world .zepeto_world .list dl dd {margin:0;}
+    main .million .contents img {width:calc((100% / 3) - 10PX);}
+    main .million .contents img:nth-last-child(2) {display: none;}
+    main .million h2 {font-size:2.188rem;}
+    main .million p {font-size: 1.0rem;}
 }/* ~760 */
