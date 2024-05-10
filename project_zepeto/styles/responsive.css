@@ -10,6 +10,7 @@
     main .million {width:100%;}
     main .million .contents img {width:calc((100% / 4) - 10PX);}
     main .million .contents img:last-child {display: none;}
+    .f_bg footer {padding:0 16px;}
 }/* 761~1300 */
 @media screen and (max-width:760px){
     header h1 {width:225.75px;}
@@ -34,4 +35,6 @@
     main .million .contents img:nth-last-child(2) {display: none;}
     main .million h2 {font-size:2.188rem;}
     main .million p {font-size: 1.0rem;}
+    .f_bg footer .f_top {flex-flow:column;}
+    .f_bg footer .f_top .lang_sns {margin-top:10px;}
 }/* ~760 */
