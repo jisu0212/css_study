@@ -3,13 +3,14 @@ main {
 }
 /* 공통 디자인 */
 main .bg {
-    width:1920px;
+    width:100%;
     margin:0 auto;
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
 }
 main > .bg section {
-    width:1250px; margin:0 auto;
+    max-width:1250px; margin:0 auto;
 }
 main > .bg section .btn a {
     line-height: 91px; width:318px;
@@ -88,10 +89,10 @@ main .bg2 section {
 main .bg2 section #quiz {}
 main .bg2 section #quiz .frm {}
 main .bg2 section #quiz .frm ul {}
-main .bg2 section #quiz .frm ul li {}
 main .bg2 section #quiz .frm ul li {
     font-size: 1.625rem;
     font-weight: 600;
+    text-align: left;
 }
 main .bg2 section #quiz .frm ul li:first-child {
     margin-bottom: 60px;
@@ -184,8 +185,7 @@ main .bg4 section h2 {
     line-height: 170%;
 }
 main .bg4 section .btn {
-    background-color: aqua;
-    text-align: center;
+    margin: 108px 0 49px 465px;
 }
 main .bg4 section .btn a {
     border:2px solid #fff;
@@ -206,7 +206,165 @@ main .bg5 section ul {
     text-align: center;
 }
 main .bg5 section li {}
+main .bg5 section li:first-child {margin-bottom: 50px;}
 main .bg5 section li h2 {}
 main .bg5 section li h3 {}
 main .bg5 section li p {}
 main .bg5 section li img {}
+/* ========================== 공통 디자인 start ======================== */
+main .bg section li {text-align: center;}
+main .bg section li h2 {
+    color:#0078FF;
+    font-size:1.625rem;
+    font-weight: 700;
+}
+main .bg section li h3 {
+    font-size: 2.125rem;
+    font-weight:700;
+    line-height: 1.2;
+    margin:20px 0;
+}
+main .bg section li p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+main .bg6 section ul,
+main .bg7 section ul,
+main .bg8 section ul,
+main .bg9 section ul {
+    display:flex;
+    padding:183px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ========================== 공통 디자인 end ======================== */
+/* bg6 */
+main .bg6 {
+    background-image: url(../images/bg6.jpg);
+}
+main .bg6 section {}
+main .bg6 section ul {}
+main .bg6 section ul li {}
+main .bg6 section ul li img {}
+main .bg6 section ul li h2 {}
+main .bg6 section ul li h3 {}
+main .bg6 section ul li p {}
+/* bg7 */
+main .bg7 {
+    background-image: url(../images/bg7.jpg);
+}
+main .bg7 section {}
+main .bg7 section ul {}
+main .bg7 section ul li {}
+main .bg7 section ul li h2 {}
+main .bg7 section ul li h3 {}
+main .bg7 section ul li p {}
+main .bg7 section ul li img {}
+/* bg8 */
+main .bg8 {
+    background-image: url(../images/bg8.jpg);
+}
+main .bg8 section {}
+main .bg8 section ul {}
+main .bg8 section ul li {}
+main .bg8 section ul li img {}
+main .bg8 section ul li h2 {}
+main .bg8 section ul li h3 {}
+main .bg8 section ul li p {}
+/* bg9 */
+main .bg9 {
+    background-image: url(../images/bg9.jpg);
+}
+main .bg9 section {}
+main .bg9 section ul {}
+main .bg9 section ul li {}
+main .bg9 section ul li h2 {}
+main .bg9 section ul li h3 {}
+main .bg9 section ul li p {}
+main .bg9 section ul li img {}
+/* bg10 */
+main .bg10 {}
+main .bg10 section {
+    padding:163px 0;
+    overflow: hidden;
+}
+main .bg10 section .title {
+    margin-bottom: 102px;
+}
+main .bg10 section .title h2 {
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+main .bg10 section .title h3 {
+    font-size: 3.438rem;
+    line-height: 1.7;
+    margin-top:24px;
+}
+main .bg10 section .title h3 em {
+    font-weight: 700;
+}
+main .bg10 section .title h3 strong {
+    font-weight: 700;
+    color:#0078FF;
+}
+main .bg10 section ul {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 103px;
+}
+main .bg10 section ul li {}
+main .bg10 section ul li p {}
+main .bg10 section ul li p img {}
+main .bg10 section ul li h3 {margin: 15px 0;}
+main .bg10 section ul li p:last-child {
+    font-size: 1.625rem;
+}
+main .bg10 section .btn {float:right;}
+main .bg10 section .btn a {}
+/* bg11 */
+main .bg11 {
+    background-image: url(../images/bg11.jpg);
+    text-align: center;
+}
+main .bg11 section {}
+main .bg11 section h2 {
+    font-size: 4.375rem;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: -0.2px;
+    color:#fff;
+    padding: 414px 0 446px;
+}
+/* bg12 */
+main .bg12 {
+    background-image: url(../images/bg12.jpg);
+    padding:173px 0 230px;
+}
+main .bg12 section {}
+main .bg12 section .bg12_title {
+    display:flex;
+    justify-content: space-between;
+}
+main .bg12 section .bg12_title h1 {
+    color:#fff;
+}
+main .bg12 section .bg12_title h1 a {}
+main .bg12 section .bg12_title h1 a img {}
+main .bg12 section .bg12_title ul {
+    display:flex;
+    flex-flow:row nowrap;
+}
+main .bg12 section .bg12_title ul li {
+    margin-left:25px;
+}
+main .bg12 section .bg12_title ul li:first-child {margin:0;}
+main .bg12 section .bg12_title ul li a {}
+main .bg12 section .bg12_title ul li a img {}
+main .bg12 section .bg12_contents {}
+main .bg12 section .bg12_contents p {
+    color:#fff;
+    margin-top:57px;
+    line-height: 1.7;
+}
