@@ -23,7 +23,9 @@ main > .bg section .btn a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    transition:background-color 0.3s, border-color 0.3s;
 }
+main > .bg section .btn a:hover {background-color: #232323;}
 main .bg section .btn a::before {
     content:'';
     background-repeat: no-repeat;
@@ -72,6 +74,7 @@ main .bg1 section .btn a:nth-child(2) {
     color:#050505;
     background-color: #fff;
 }
+main .bg1 section .btn a:nth-child(2):hover {background-color: #cbcbcb;}
 main .bg1 section .btn a:nth-child(2)::before {
     background-image: url(../images/icon_homepage.svg);
 }
@@ -139,7 +142,9 @@ main .bg2 section #quiz .frm ul .btn #check_btn {
     font-weight: 700;
     font-size: 1.625rem;
     margin:60px 0 0 67px;
+    transition: background-color 0.3s;
 }
+main .bg2 section #quiz .frm ul .btn #check_btn:hover {background-color: #232323;}
 main .bg2 section .right {width:397px;}
 main .bg2 section .right p {
     font-size: 1.25rem;
@@ -190,6 +195,7 @@ main .bg4 section .btn {
 main .bg4 section .btn a {
     border:2px solid #fff;
 }
+main .bg4 section .btn a:hover {border-color: #a3a3a3;}
 main .bg4 section p {}
 main .bg4 section p img {}
 /* bg5 */
@@ -359,6 +365,7 @@ main .bg12 section .bg12_title ul {
 main .bg12 section .bg12_title ul li {
     margin-left:25px;
 }
+main .bg12 section .bg12_title ul li:hover {filter:opacity(0.5);}
 main .bg12 section .bg12_title ul li:first-child {margin:0;}
 main .bg12 section .bg12_title ul li a {}
 main .bg12 section .bg12_title ul li a img {}
