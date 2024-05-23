@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <script src="./script/cart.js" defer></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+</head>
+<body>
+    <header>...</header>
+    <main>
+        <h1>장바구니</h1>
+        <div class="cart_wrap">
+            <div class="top">
+                <input type="checkbox" name="all_select" id="all_select">
+                <label for="">전체선택 (
+                    <span class="select_num">0</span>/
+                    <span class="total_num">0</span>
+                    )</label>
+                <a href="#" class=" select_delete">선택삭제</a>
+            </div>
+            <div class="item_wrap">
+                <div class="item">
+                    <div class="select">
+                        <input type="checkbox" name="item_select" id="item_select1">
+                    </div>
+                    <a href="#">
+                        <p class="photo"><img src="" alt=""></p>
+                        <h2>[남향푸드또띠아] 핫 치킨 브리또 2개입</h2>
+                        <p class="detail">[남향푸드또띠아] 간편 브리또 15종 2개입</p>
+                    </a>
+                    <div class="num">
+                        <button type="button" id="minus">-</button>
+                        <input type="text" name="count" id="count">
+                        <button type="button" id="plus">+</button>
+                    </div>
+                    <div class="price">
+                        <em class="total_price">24,500원</em>
+                        <span class="original_price">33,000원</span>
+                    </div>
+                    <a href="#" class="item_delete">X</a>
+                </div>
+                <!-- <p>
+                    <input type="checkbox" name="item_check" id="item_check">
+                </p>
+                <a href="#">
+                    <p><img src="#" alt=""></p>
+                    <h2>[남향푸드또띠아] 핫 치킨 브리또 2개입</h2>
+                    <h3>[남향푸드또띠아] 간편 브리또 15종 2개입 (택1)</h3>
+                </a>
+                <p>
+                    <a href="#">-</a>
+                    <span class="buy_num">1</span>
+                    <a href="#">+</a>
+                </p>
+                <div class="peice">
+                    <h2>24,500원</h2>
+                    <h3><del>33,000원</del></h3>
+                </div>
+                <button type="button" id="delete"><img src="#" alt=""></button> -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

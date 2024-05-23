@@ -1,0 +1,67 @@
+/* 디자인은 자유롭게! */
+html body {background-color: #000;}
+main {
+    font-family: 'Noto Sans KR', sans-serif;
+    width:1000px;
+    margin:0 auto;
+    text-align: center;
+    padding:55px 0 70px;
+}
+main .img {width:700px; margin:0 auto;}
+main .img img {}
+main .contents {
+    background-color: #fff;
+    width:700px;
+    margin:52px auto 0;
+    padding:50px 40px;
+    border-radius: 20px;
+    font-size: 1.25rem;
+}
+main .contents .title {}
+main .contents .title h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+main .contents .title p {}
+main .contents ul {}
+main .contents ul li {
+    margin:50px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .contents ul li span {
+    width:510px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .contents ul li span #height,
+main .contents ul li span #weight,
+main .contents ul li span #goals {
+    border:2px solid #fe4c90;
+    border-radius: 50px;
+    line-height: 50px;
+    width:467px;
+    text-align: center;
+    font-size: 1.25rem;
+    padding:0 30px;
+}
+main .contents ul li span #height {}
+main .contents ul li span #weight {}
+main .contents ul li span #goals {}
+main .contents ul li span #goals .exercise {}
+main .contents > p {}
+main .contents > p #result {
+    width:100%; line-height: 50px;
+    background-color: #fe4c90;
+    color:#000;
+    border:0;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+main .contents > p #result:hover {
+    color:#fff; background-color: #db246b;
+}

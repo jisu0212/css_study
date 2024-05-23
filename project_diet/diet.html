@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다이어트 계산기</title>
+    <link rel="stylesheet" href="./styles/diet.css">
+    <script src="./script/diet.js" defer></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="img"><img src="./images/img.png" alt=""></div>
+        <div class="contents">
+            <div class="title">
+                <h1>당신의 체중계</h1>
+                <p>당신의 건강몸무게를 알아보세요!</p>
+            </div>
+            <ul>
+            <li>현재 키 <span><input type="text" id="height">cm</span></li>
+            <li>현재 몸무게 <span><input type="text" id="weight">kg</span></li>
+            <li>최종 목표 <span><input type="text" id="goals"><img src="./images/icon.png" alt="" class="exercise"></span></li>
+            </ul>
+            <p><button type="button" id="result" onClick="btn">적정체중 결과보기</button></p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,81 @@
+header {}
+main {
+    width:1000px; margin:0 auto;
+    background:lightgray; 
+}
+main h1 {
+    font-size:2rem; text-align:center;
+    padding:30px 0 100px;
+}
+main .cart_wrap {
+    background-color:aqua;
+}
+main .cart_wrap .top {
+    background-color:yellow;
+    border-bottom:1px solid #222;
+    padding:0 0 15px; margin:0 0 15px;
+}
+main .cart_wrap .top input[name^=all] {}
+main .cart_wrap .top input[name^=all]:checked + label {}
+main .cart_wrap .top label {
+    margin-right:15px;
+}
+main .cart_wrap .top label::after {
+    content:''; display:inline-block;
+    width:1px; height:10px; background-color:#aaa;
+    position:relative; right:-10px; top:-1px;
+}
+main .cart_wrap .top label .select_num {}
+main .cart_wrap .top label .total_num {}
+main .cart_wrap .top .select_delete {}
+/* ===========장바구니 아이템 영역 */
+main .cart_wrap .item_wrap {
+    background-color:lime;
+}
+main .cart_wrap .item_wrap .item {
+    background-color:beige;
+    display:flex; justify-content: space-between;
+    align-items: center;
+}
+main .cart_wrap .item_wrap .item > * {
+    border:1px solid red;
+}
+main .cart_wrap .item_wrap .item .select {width:24px;}
+main .cart_wrap .item_wrap .item .select input[name^=item] {}
+main .cart_wrap .item_wrap .item > a {
+    display:grid;
+    grid-template-areas:
+        'photo name'
+        'photo detail';
+}
+main .cart_wrap .item_wrap .item > a .photo {
+    grid-area:photo;
+    width:70px; height:80px; background:gray;
+}
+main .cart_wrap .item_wrap .item > a .photo img {}
+main .cart_wrap .item_wrap .item > a h2 {
+    grid-area:name;
+}
+main .cart_wrap .item_wrap .item > a .detail {
+    grid-area:detail;
+}
+main .cart_wrap .item_wrap .item .num {}
+main .cart_wrap .item_wrap .item .num button {
+    width:24px; height:24px;
+}
+main .cart_wrap .item_wrap .item .num #minus {}
+main .cart_wrap .item_wrap .item .num #plus {}
+main .cart_wrap .item_wrap .item .num #count {
+    width:40px;
+}
+main .cart_wrap .item_wrap .item .price {
+    display:flex; flex-flow:column nowrap;
+    text-align:right;
+}
+main .cart_wrap .item_wrap .item .price .total_price {
+    font-size:1.5rem; font-weight:700;
+}
+main .cart_wrap .item_wrap .item .price .original_price {
+    color:#aaa; text-decoration:line-through;
+}
+main .cart_wrap .item_wrap .item .item_delete {}
