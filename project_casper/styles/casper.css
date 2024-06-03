@@ -1,0 +1,274 @@
+body {font-family: "Noto Sans KR", sans-serif;}
+header {
+    background-color: #fff;
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    width:100%;
+    align-items: flex-start;
+    height:70px;
+    overflow: hidden;
+    padding:0 30px;
+    z-index: 999;
+}
+header h1 {
+    line-height:70px;
+}
+header h1 > a {}
+header h1 > a img {}
+header nav {}
+header nav .gnb {
+    display:flex; height:70px;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .gnb > li {
+    position:relative;
+    width:170px;
+}
+header nav .gnb > li > a {font-weight: 700;}
+header nav .gnb > li .sub {
+    position:absolute; top:30px; left:0;
+    height:300px;
+}
+header nav .gnb > li .sub li {}
+header nav .gnb > li .sub li a {
+    font-weight: 400;
+    line-height: 30px;
+    width:170px;
+    display:block;
+}
+header nav .gnb > li .sub li a img {width:170px; border-radius: 5px;}
+header .right {line-height: 70px;}
+header .right a {margin-right:10px;}
+header .right a:first-child {display:none;}
+header .right a:last-child {margin: 0;}
+header .right a img {width:20px; height:24px;}
+/* part1 */
+main {}
+main .part1 {
+    background-image: url(../images/casper/visual.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height:100vh;
+    text-align: center;
+}
+main .part1 h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 110px 0 30px;
+    color:#fff;
+}
+main .part1 p {
+    color:#fff;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+main .part1 .link {}
+main .part1 .link a {
+    background-color: #002c5f;
+    color:#fff;
+    padding:5px 20px;
+}
+main .part1 .mouse_img {
+    position:relative; top:530px;
+}
+main .part1 .mouse_img img {
+    width:50px;
+    filter: invert();
+    animation: moving 1s linear alternate infinite;
+}
+@keyframes moving {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(0, 30px);}
+}
+/* part2 */
+main .part2 {
+    display: flex;
+    justify-content: space-between;
+    padding:50px 30px;
+}
+main .part2 .second_left {}
+main .part2 .second_left h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+main .part2 .second_left h2 span {
+    font-weight: 700;
+}
+main .part2 .second_left > p {
+    font-size: 1.3rem;
+    color:#888;
+    margin-top: 5px;
+}
+main .part2 .second_right {
+    display: flex;
+    width:calc(100% - 500px); height: 420px;
+    overflow-x: auto;
+}
+main .part2 .second_right .contents {margin:0 15px; font-size: 0.9rem;}
+main .part2 .second_right .contents > p {margin: 5px 0 10px;}
+main .part2 .second_right .contents > p img {}
+main .part2 .second_right .contents .contents_title {
+    display: flex;
+    align-items: center;
+}
+main .part2 .second_right .contents .contents_title h3 {
+    font-size: 1.25rem;
+    color:#002c5f;
+    margin-right: 10px;
+}
+main .part2 .second_right .contents .contents_title p {
+    background-color: #002c5f;
+    color: #fff;
+    padding: 5px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+/* part3 */
+main .part3 {
+    text-align: center;
+    padding:120px 0 0;
+}
+main .part3 .back_title {
+    font-weight: 900;
+    font-size: 15rem;
+    color:#ddd;
+}
+main .part3 .part3_img {
+    position:relative; bottom: 160px;
+}
+main .part3 .part3_img img {}
+/* part4 */
+main .part4 {}
+main .part4 .part4_left {
+    background-color: #333;
+    color:#fff;
+    padding:60px 30px;
+}
+main .part4 .part4_left h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+main .part4 .part4_left h2 span {
+    font-weight: 700;
+}
+main .part4 .part4_left dl {}
+main .part4 .part4_left dl dt {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+main .part4 .part4_left dl dd {
+    display: flex;
+}
+main .part4 .part4_left dl dd p {
+    width:32px; height:32px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right:10px;
+    border:1px solid #fff;
+}
+main .part4 .part4_left dl dd p:nth-child(2) {
+    background-color: #b5b5b5;
+}
+main .part4 .part4_left dl dd p:last-child {
+    background-color: #888888;
+}
+main .part4 .part4_right {
+    text-align: right;
+    position:relative; bottom:110px;
+}
+main .part4 .part4_right img {width:500px;}
+/* part5 */
+main .part5 {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 100px 0;
+}
+main .part5 .part5_title {}
+main .part5 .part5_title h2 {
+    font-size: 2.5rem;
+}
+main .part5 .part5_title h2 span {
+    font-weight: 700;
+}
+main .part5 .part5_title p {
+    font-size: 1.35rem;
+    margin:30px 0;
+    color:#888;
+}
+main .part5 .part5_title video {
+    width:800px;
+}
+/* part6 */
+main .part6 {
+    padding:100px 30px;
+}
+main .part6 .part6_title {}
+main .part6 .part6_title h2 {
+    font-size: 2.5rem;
+}
+main .part6 .part6_title h2 span {
+    font-weight: 700;
+}
+main .part6 .part6_title p {
+    color:#888;
+    font-size: 1.35rem;
+    margin:20px 0;
+}
+main .part6 .part6_title .trim_link {}
+main .part6 .part6_title .trim_link a {
+    color:#fff;
+    padding: 5px 20px;
+    background-color: #007fa8;
+}
+main .part6 ul {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+main .part6 ul li {
+    text-align: center;
+}
+main .part6 ul li p {}
+main .part6 ul li p img {width:250px;}
+main .part6 ul li .part6_contents {
+    padding-top: 10px;
+}
+main .part6 ul li .part6_contents h3 {
+    color:#007fa8;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+main .part6 ul li .part6_contents p {
+    line-height: 1.2;
+    margin: 10px 0;
+}
+main .part6 ul li .part6_contents p em {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+/* footer */
+footer {
+    background-color: #002c5f;
+    display: flex;
+    padding:50px 30px;
+}
+footer h1 {}
+footer h1 a {}
+footer h1 a img {}
+footer address {
+    margin-left: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(100% - 260px);
+}
+footer address span {
+    color:#fff;
+    width: 50%;
+    font-size: 0.875rem;
+    line-height: 30px;
+}
+footer address span a {color: #fff; text-decoration: underline;}

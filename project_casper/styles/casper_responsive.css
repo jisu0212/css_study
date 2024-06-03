@@ -1,0 +1,17 @@
+@media screen and (max-width:1300px){
+    header nav {display: none;}
+    header .right a:first-child {display:inline-block;}
+    main .part5 .part5_title video {width:80%;}
+}
+@media screen and (max-width:760px){
+    main .part2 {flex-flow: column nowrap;}
+    footer address {margin:0;}
+    footer {flex-flow:column nowrap;}
+    footer address {flex-flow: column wrap; width:100%;}
+    footer address span {width:100%;}
+    main .part2 .second_right {width:100%; margin-top:20px;}
+    main .part4 .part4_right img {width: 380px;}
+    main .part3 .back_title {font-size: 10rem;}
+    main .part3 .part3_img img {width:80%;}
+    main .part3 .part3_img {bottom: 100px; margin-bottom: 100px;}
+}
