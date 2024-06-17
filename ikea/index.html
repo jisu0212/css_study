@@ -47,7 +47,7 @@
                 <div class="part2_intro2">
                     <div class="whynot"><h3>왜 못해?</h3></div>
                     <p><img src="./images/img_whynot.jpg" alt=""></p>
-                    <h3>한 번 해보는거야,<br>집이니까!</h3>
+                    <h3>한 번 해보는거야,<br><em>집이니까!</em></h3>
                 </div>
             </div>
         </div>
@@ -59,9 +59,9 @@
             <div class="part3_content">
                 <div class="content_img"><img src="./images/img_dog.jpg" alt=""></div>
                 <div class="content_text">
-                    <p>집에서 하지 않던 일들, 왜 안 해요? 자유로운 상상, 과감한 도전, 예상치 못한 
-                    상황에서 발견하는 창의적인 솔루션. 이케아와 함께라면 가능해요. 불가능한 
-                    일들을 가능하게 해주는 이케아의 매력에 빠져보세요. 큰 비용 없이 이케아로 
+                    <p>집에서 하지 않던 일들, 왜 안 해요? 자유로운 상상, 과감한 도전, 예상치 못한 <br>
+                    상황에서 발견하는 창의적인 솔루션. 이케아와 함께라면 가능해요. 불가능한<br>
+                    일들을 가능하게 해주는 이케아의 매력에 빠져보세요. 큰 비용 없이 이케아로<br>
                     집에서 원하는 공간, 원하는 일을 마음껏 누릴 수 있어요.
                     </p>
                 </div>
@@ -69,15 +69,17 @@
             <div class="part3_content">
                 <div class="content_img"><img src="./images/img_cook2.jpg" alt=""></div>
                 <div class="content_text">
-                    <p>이케아의 아이템을 활용해서 부담 없이 집 안 곳곳에 개성을 표현하고, 창의적인 
-                    행동을 하세요. 그걸 사진으로 기록하고 아래 캠페인 참여에 등록해 동참해보세 
-                    요. 캠페인 참여자들을 대상으로 추첨하여 상품을 지급해드리며, 참여한 인원당 
+                    <p>이케아의 아이템을 활용해서 부담 없이 집 안 곳곳에 개성을 표현하고, 창의적인<br>
+                    행동을 하세요. 그걸 사진으로 기록하고 아래 캠페인 참여에 등록해 동참해보세<br>
+                    요. 캠페인 참여자들을 대상으로 추첨하여 상품을 지급해드리며, 참여한 인원당<br>
                     1,000원이 전세계의 난민들에게 전달됩니다. 착한 캠페인에 동참해주세요.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="part part4"></div>
+        <div class="part part4">
+            <img src="./images/event_ikea.png" alt="이벤트 이케아 아이템과 함께 캠페인에 참여하는 사진을 찍어 아래 '캠페인 참여'칸에 등록해주시면 추첨을 통해 '이케아 곰인형'을 드립니다.">
+        </div>
         <div class="part part5">
             <div class="title">
                 <h3 class="sub_title">IKEA Recommend</h3>
@@ -238,7 +240,7 @@
                     <ul>
                         <li>
                             <span>이름</span>
-                            <input type="text" name="user_name" id="user_name" placeholder="ex)홍길동" required>
+                            <input type="text" name="user_name" id="user_name" placeholder="ex) 홍길동" required>
                         </li>
                         <li>
                             <span>성별</span>
@@ -311,6 +313,16 @@
             loop:true,
             slidesPerView:4, //실제 게시물 개수보다 최소 1개는 수가 적어야한다.
             spaceBetween: 10,
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+        },
             })
         </script>
     </main>

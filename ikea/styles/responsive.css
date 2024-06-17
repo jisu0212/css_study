@@ -1,7 +1,12 @@
-@media screen and (max-width:1700px) {
+@media screen and (max-width:1800px) {
     main .part3 .part3_content .content_text::after {display:none;}
     main .part6 .service_list {
         width:calc(100% - 32px);
+    }
+}
+@media screen and (max-width:1340px) {
+    main .part3 .part3_content .content_img {
+        width:calc(100% - 16px);
     }
 }
 @media screen and (max-width:1200px) {
@@ -16,32 +21,26 @@
     main .part2 .part2_bg .part2_intro2 p {
         width:calc(100% - 32px);
     }
-    main .part3 .part3_content .content_img {
-        width:1184px; height:465px;
-    }
-    main .part4 {
-        height:551px;
-        background-image: url(../images/event_ikea1200.jpg);
-    }
     main .part5 .product_list {
         width:calc(100% - 32px);
     }
     main .part5 .product_list > li {
         width:calc((100% / 2) - (20px / 2));}
     main .part7 #participation_frm fieldset ul {
+        padding: 100px 16px;
         width: calc(100% - 32px);}
     main .part7 #participation_frm fieldset ul li span {width:178px;}
     main .part7 #participation_frm fieldset ul li input[name^=user],
-    main .part7 #participation_frm fieldset ul li #user_contents {width:790px;}
+    main .part7 #participation_frm fieldset ul li #user_contents {width:calc(100% - 178px);}
     main .part7 #participation_frm fieldset #submit_btn {width:calc(100% - 32px);}
+    footer {padding: 16px;}
+    footer .sns {margin: 100px 0 89px;}
+    footer .sns a {margin-right: 80px;}
     footer .ikea_info {flex-flow:column nowrap;}
     footer .ikea_info .info_link{margin-top:20px;}
-    footer .ikea_info .info_link a {
-        margin-right: 45px;
-    }
-    footer .ikea_info .info_link a:last-child {
-        margin:0;
-    }
+    footer .ikea_info .info_link a {margin-right: 45px;}
+    footer .ikea_info .info_link a:last-child {margin:0;}
+    footer .ikea_info2 {margin-bottom: 100px;}
 }
 @media screen and (max-width:1130px) {
     main .part6 .service_list {
@@ -50,15 +49,15 @@
     }
     main .part6 .service_list li {margin-top: 89px;}
 }
+@media screen and (max-width:900px) {
+    main .part3 .part3_content .content_img 
+}
 @media screen and (max-width:760px) {
     main .part1 .part1_contents {
         height:200px; padding:20px 16px;
     }
     main .part1 .part1_contents h1 {width:50px;}
     main .part1 .part1_contents h2 {font-size: 1.25rem; margin:6px 0;}
-    main .part3 .part3_content .content_img {
-        width:744px; height:351px; background-color: red;
-    }
     main .part3 .part3_content .content_img img {
         bottom: 0;
     }
@@ -66,9 +65,11 @@
         bottom:100px;
     }
     main .part3 .part3_content .content_text p {
-        width:760px;}
+        font-size: 1.25rem;
+    }
+    main .part5 .more_wrap {height:71px;}
     main .part7 #participation_frm fieldset ul li span {
         width:126px;}
     main .part7 #participation_frm fieldset ul li input[name^=user],
-    main .part7 #participation_frm fieldset ul li #user_contents {width:570px;}
+    main .part7 #participation_frm fieldset ul li #user_contents {width:calc(100% - 126px);}
 }

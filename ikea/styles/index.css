@@ -55,7 +55,7 @@ main .part2 {
 }
 main .part2 .part2_bg {
     background-color: #1f1f1f;
-    border-radius: 0 0 1000px 1000px;
+    border-radius: 0 0 calc(1920px / 2) calc(1920px / 2);
     text-align: center;
     padding:200px 0;
 }
@@ -90,14 +90,13 @@ main .part2 .part2_bg .part2_intro2 p {
     width:calc(100% - 600px); margin:43px auto;
     border-radius: 20px; overflow: hidden;
 }
-main .part2 .part2_bg .part2_intro2 p img {
-    width: 101%;
-}
+main .part2 .part2_bg .part2_intro2 p img {width: 101%;}
 main .part2 .part2_bg .part2_intro2 > h3 {
     font-size: 4.375rem;
     color:#FFB320;
     line-height: 1.5;
 }
+main .part2 .part2_bg .part2_intro2 > h3 em {font-weight: 700;}
 /* part3 */
 main .part3 {
     padding: 200px 0;
@@ -108,50 +107,36 @@ main .part3 .title .sub_title {}
 main .part3 .title .main_title {}
 main .part3 .part3_content {margin:118px 0; overflow:hidden;}
 main .part3 .part3_content .content_img {
-    width:1470px; height: 577px; border-radius: 0 500px 500px 0;
-    overflow: hidden;
+    overflow: hidden; float: left;
 }
 main .part3 .part3_content .content_img img {
-    width:100%; position:relative; bottom:180px;
+    width:calc(100% - 450px); border-radius: 0 calc(577px / 2) calc(577px / 2) 0;
+    width:100%;
 }
 main .part3 .part3_content .content_text {
-    width:100%; float: right;
-    position:relative;
-    margin-top:100px;
+    width:100%;
+    position:relative; padding: 0 16px;
+    margin:100px auto 0; float:right;
 }
 main .part3 .part3_content .content_text p {
-    width:968px;
     font-size: 1.563rem;
     line-height: 1.7;
     text-align: center;
-    margin: 0 auto;
-}
-main .part3 .part3_content .content_text::after {
-    content: ''; display:inline-block;
-    width:400px; height:2px; background-color: #0058ab;
-    position:absolute; top:102px; right:0;
 }
 /* part3-cooking */
 main .part3 .part3_content:last-child {
     text-align: right;
 }
 main .part3 .part3_content:last-child .content_img {
-    border-radius: 500px 0 0 500px; 
     float: right;
 }
 main .part3 .part3_content:last-child .content_img img {
-    bottom:300px;
-}
-main .part3 .part3_content:last-child .content_text::after {
-    left:0;
+    width:calc(100% - 450px); border-radius: calc(577px / 2) 0 0 calc(577px / 2);
+    width:100%;
 }
 /* part4 */
-main .part4 {
-    width:100%; height:883px;
-    background-image: url(../images/event_ikea.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
+main .part4 {}
+main .part4 img {width:100%; vertical-align: bottom;}
 /* part5 */
 main .part5 {
     background-color: #0058ab;
@@ -200,14 +185,14 @@ main .part5 .product_list > li .product_info li a img {
     transition: 0.3s;
 }
 main .part5 .product_list > li .product_info li a img:hover {transform: translateY(5px);}
-main .part5 .more_wrap {overflow: hidden; padding: 0 300px; height:71px;}
+main .part5 .more_wrap {
+    height:71px; text-align: center;}
 main .part5 .more_wrap .more_link {
     background-color: #fff;
-    border-radius: 500px;
+    border-radius: 33px;
     width:213px; height: 66px; padding:0 30px;
-    display:flex; align-items: center; justify-content: space-between; font-size: 1.25rem;
+    display:inline-flex; align-items: center; justify-content: space-between; font-size: 1.25rem;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
-    float:right;
 }
 main .part5 .more_wrap .more_link span {}
 main .part5 .more_wrap .more_link img {}
@@ -268,14 +253,14 @@ main .part7 #participation_frm fieldset ul li:nth-child(5) {
 }
 main .part7 #participation_frm fieldset ul li input[name^=user],
 main .part7 #participation_frm fieldset ul li #user_contents{
-    width:900px; line-height: 50px; border-radius: 500px; border:0; background-color: #F0F0F0; font-size: 1.25rem;
-    padding: 0 30px; 
+    width:calc(100% - 126px); line-height: 50px; border-radius: 25px; border:0; background-color: #F0F0F0; font-size: 1.25rem;
+    padding: 0 30px;
 }
 main .part7 #participation_frm fieldset ul li input[name^=user]:focus,
 main .part7 #participation_frm fieldset ul li #user_contents:focus {outline: none;}
 main .part7 #participation_frm fieldset ul li .gender_check {
-    width:900px; text-align: left;
-    height: 60px; display: flex; flex-flow:row nowrap; align-items: center;
+    width:calc(100% - 126px); text-align: left;
+    height: 60px; display: flex; flex-flow:row nowrap; align-items: center; padding: 0 30px;
 }
 main .part7 #participation_frm fieldset ul li .gender_check input[name=gender] {display: none;}
 main .part7 #participation_frm fieldset ul li .gender_check input[name=gender]:checked + label {
@@ -288,17 +273,17 @@ main .part7 #participation_frm fieldset ul li .gender_check label {
 }
 main .part7 #participation_frm fieldset ul li .gender_check label:last-child {margin-left: 132px;}
 main .part7 #participation_frm fieldset ul li #user_contents {
-    border-radius:20px; padding: 10px 30px; height:300px;
+    border-radius:20px; padding: 10px 30px; height:300px; font-weight: 700;
 }
 main .part7 #participation_frm fieldset ul li #photo_btn {
-    height: 60px; border-radius: 500px;
+    height: 60px; border-radius: 30px;
     background-color: #fff; border:1px solid #ddd;
     display:flex; align-items: center; justify-content: space-between; padding: 20px 30px; font-size: 1.25rem;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
 main .part7 #participation_frm fieldset ul li #photo_btn img {margin-right:10px;}
 main .part7 #participation_frm fieldset #submit_btn {
-    width:calc(100% - 600px); line-height: 80px; border-radius: 500px;
+    width:calc(100% - 600px); line-height: 80px; border-radius: 40px;
     background-color: #1f1f1f; color:#FBD914; border:0;
     font-size: 1.875rem; transition:0.3s;
 }
@@ -324,13 +309,13 @@ main .part8 .participate_slide .swiper-wrapper {
     margin:80px 0;
 }
 main .part8 .participate_slide .swiper-wrapper .swiper-slide {
-    width:537px;
+    width:537px; padding: 0 16px;
 }
 main .part8 .participate_slide .swiper-wrapper .swiper-slide img {width:100%; border-radius: 20px;}
 main .part8 a {
     background-color: #fff; height:85px; width:415px;
     display: flex; align-items: center; justify-content: space-between; margin:0 auto;
-    border-radius: 500px; font-size: 1.875rem; padding:20px 50px; box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    border-radius: calc(85px / 2); font-size: 1.875rem; padding:20px 50px; box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
 main .part8 a img {}
 /* footer */
