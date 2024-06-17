@@ -1,3 +1,4 @@
+body {width:100%; overflow-x: hidden;}
 main {
     font-family: "Noto Sans KR",sans-serif;
     width:100%;
@@ -332,6 +333,7 @@ footer .ikea_info {
     display: flex; flex-flow:row nowrap; justify-content: space-between;
 }
 footer .ikea_info > p {margin-right: 319px;}
+footer .ikea_info .info_link {}
 footer .ikea_info .info_link a {margin-right:45px;}
 footer .ikea_info .info_link a:last-child {margin:0;}
 footer .ikea_info .info_link a span {color:#fff; text-decoration: underline;}

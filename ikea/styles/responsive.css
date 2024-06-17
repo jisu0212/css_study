@@ -53,23 +53,17 @@
     main .part3 .part3_content .content_img 
 }
 @media screen and (max-width:760px) {
-    main .part1 .part1_contents {
-        height:200px; padding:20px 16px;
-    }
+    main .part1 .part1_contents {height:200px; padding:20px 16px;}
     main .part1 .part1_contents h1 {width:50px;}
     main .part1 .part1_contents h2 {font-size: 1.25rem; margin:6px 0;}
-    main .part3 .part3_content .content_img img {
-        bottom: 0;
-    }
-    main .part3 .part3_content:last-child .content_img img {
-        bottom:100px;
-    }
-    main .part3 .part3_content .content_text p {
-        font-size: 1.25rem;
-    }
+    main .part3 .part3_content .content_img img {bottom: 0;}
+    main .part3 .part3_content:last-child .content_img img {bottom:100px;}
+    main .part3 .part3_content .content_text p {font-size: 1.25rem;}
     main .part5 .more_wrap {height:71px;}
-    main .part7 #participation_frm fieldset ul li span {
-        width:126px;}
+    main .part7 #participation_frm fieldset ul li span {width:126px;}
     main .part7 #participation_frm fieldset ul li input[name^=user],
     main .part7 #participation_frm fieldset ul li #user_contents {width:calc(100% - 126px);}
+    footer .ikea_info > p {width:200px; margin-right: 0;}
+    footer .ikea_info .info_link a {display: block; margin-bottom: 10px;}
+    footer .ikea_info2 {width:100%;}
 }
