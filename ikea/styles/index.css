@@ -1,0 +1,367 @@
+main {
+    font-family: "Noto Sans KR",sans-serif;
+    width:100%;
+}
+main .part {}
+/* 공통 */
+main .part .title {
+    width:100%;
+    padding: 0 300px;
+}
+main .part .title .sub_title {
+    font-size: 1.25rem;
+    color:#0058ab;
+    font-weight: 700;
+}
+main .part .title .main_title {
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 1.7;
+}
+main .part5 .more_wrap .more_link,
+main .part7 #participation_frm fieldset ul li #photo_btn,
+main .part8 a,
+main .part6 .service_list li {transition: 0.3s;}
+main .part5 .more_wrap .more_link:hover,
+main .part7 #participation_frm fieldset ul li #photo_btn:hover,
+main .part8 a:hover,
+main .part6 .service_list li:hover {background-color: #ddd; transform: translateY(5px);}
+/* part1 */
+main .part1 {position:relative;}
+main .part1 .main_video {overflow:hidden;}
+main .part1 .main_video video {width:100%;}
+main .part1 .part1_contents {
+    background-image: linear-gradient(rgba(31,31,31,0.3) 0,rgba(31,31,31,1));
+    padding:97px 300px;
+    position:absolute; bottom:0;
+    width:100%; height:512px;
+}
+main .part1 .part1_contents h1 {width:133px;}
+main .part1 .part1_contents h1 a {}
+main .part1 .part1_contents h1 a img {width:100%;}
+main .part1 .part1_contents h2 {
+    font-size: 3.125rem;
+    color:#FBD914;
+    font-weight: 700;
+    margin: 20px 0;
+}
+main .part1 .part1_contents p {
+    color:#fff;
+    line-height: 1.7;
+}
+/* part2 */
+main .part2 {
+    background-image: linear-gradient(#996B13 80%, #FFB320 90%);
+}
+main .part2 .part2_bg {
+    background-color: #1f1f1f;
+    border-radius: 0 0 1000px 1000px;
+    text-align: center;
+    padding:200px 0;
+}
+main .part2 .part2_bg .part2_intro {margin-bottom: 57px;}
+main .part2 .part2_bg .part2_intro .intro_top {}
+main .part2 .part2_bg .part2_intro .intro_top p {}
+main .part2 .part2_bg .part2_intro .intro_top p img {}
+main .part2 .part2_bg .part2_intro .intro_top h3 {
+    color:#fff; font-size: 5rem;
+}
+main .part2 .part2_bg .part2_intro > p {}
+main .part2 .part2_bg .part2_intro > p img {
+    margin: 69px 0;
+}
+main .part2 .part2_bg .part2_intro > p:last-child img {
+    margin:0;
+}
+main .part2 .part2_bg .part2_intro2 {}
+main .part2 .part2_bg .part2_intro2 .whynot {
+    width:534px; margin:0 auto;
+}
+main .part2 .part2_bg .part2_intro2 .whynot h3 {
+    background-image: url(../images/crayon-02.png);
+    background-size: 100%;
+    background-position: center;
+    font-size: 6.25rem;
+    font-weight: 600;
+    color:#FFB320;
+    height:165px;
+}
+main .part2 .part2_bg .part2_intro2 p {
+    width:calc(100% - 600px); margin:43px auto;
+    border-radius: 20px; overflow: hidden;
+}
+main .part2 .part2_bg .part2_intro2 p img {
+    width: 101%;
+}
+main .part2 .part2_bg .part2_intro2 > h3 {
+    font-size: 4.375rem;
+    color:#FFB320;
+    line-height: 1.5;
+}
+/* part3 */
+main .part3 {
+    padding: 200px 0;
+    background-color: #FFB320;
+}
+main .part3 .title {}
+main .part3 .title .sub_title {}
+main .part3 .title .main_title {}
+main .part3 .part3_content {margin:118px 0; overflow:hidden;}
+main .part3 .part3_content .content_img {
+    width:1470px; height: 577px; border-radius: 0 500px 500px 0;
+    overflow: hidden;
+}
+main .part3 .part3_content .content_img img {
+    width:100%; position:relative; bottom:180px;
+}
+main .part3 .part3_content .content_text {
+    width:100%; float: right;
+    position:relative;
+    margin-top:100px;
+}
+main .part3 .part3_content .content_text p {
+    width:968px;
+    font-size: 1.563rem;
+    line-height: 1.7;
+    text-align: center;
+    margin: 0 auto;
+}
+main .part3 .part3_content .content_text::after {
+    content: ''; display:inline-block;
+    width:400px; height:2px; background-color: #0058ab;
+    position:absolute; top:102px; right:0;
+}
+/* part3-cooking */
+main .part3 .part3_content:last-child {
+    text-align: right;
+}
+main .part3 .part3_content:last-child .content_img {
+    border-radius: 500px 0 0 500px; 
+    float: right;
+}
+main .part3 .part3_content:last-child .content_img img {
+    bottom:300px;
+}
+main .part3 .part3_content:last-child .content_text::after {
+    left:0;
+}
+/* part4 */
+main .part4 {
+    width:100%; height:883px;
+    background-image: url(../images/event_ikea.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* part5 */
+main .part5 {
+    background-color: #0058ab;
+    border-radius: 0 0 500px 0;
+    padding:200px 0;
+}
+main .part5 .title {}
+main .part5 .title .sub_title {color:#FFB320;}
+main .part5 .title .main_title {color:#fff;}
+main .part5 .product_list {
+    display:flex; flex-flow: row wrap;
+    justify-content: space-between;
+    width:1320px;
+    margin:89px auto;
+}
+main .part5 .product_list > li {
+    width:calc((100% / 3) - (45px / 2));
+    background-color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+main .part5 .product_list > li > a {height:345px;}
+main .part5 .product_list > li > a img {width:100%;}
+main .part5 .product_list > li .product_info {
+    text-align: center;
+    background-color: #fff;
+    padding:30px 0;
+}
+main .part5 .product_list > li .product_info li {
+    display:block; width:100%;
+    font-size: 1.25rem;
+}
+main .part5 .product_list > li .product_info li:nth-child(2) {
+    margin:15px 0;
+}
+main .part5 .product_list > li .product_info li h2 {margin-bottom: 10px; font-weight: 700;}
+main .part5 .product_list > li .product_info li:nth-child(2) h2 {margin-bottom: 5px;}
+main .part5 .product_list > li .product_info li p {}
+main .part5 .product_list > li .product_info li h2 span {
+    font-size: 1.875rem; font-weight: 700;
+}
+main .part5 .product_list > li .product_info li a:first-child{margin-right:20px;}
+main .part5 .product_list > li .product_info li a img {
+    transition: 0.3s;
+}
+main .part5 .product_list > li .product_info li a img:hover {transform: translateY(5px);}
+main .part5 .more_wrap {overflow: hidden; padding: 0 300px; height:71px;}
+main .part5 .more_wrap .more_link {
+    background-color: #fff;
+    border-radius: 500px;
+    width:213px; height: 66px; padding:0 30px;
+    display:flex; align-items: center; justify-content: space-between; font-size: 1.25rem;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    float:right;
+}
+main .part5 .more_wrap .more_link span {}
+main .part5 .more_wrap .more_link img {}
+/* part6 */
+main .part6 {padding:100px 0;}
+main .part6 .title {}
+main .part6 .title .sub_title {}
+main .part6 .title .main_title {}
+main .part6 .service_list {
+    display: flex; justify-content: space-between;
+    flex-flow: row wrap;
+    width:calc(100% - 600px); margin: 89px auto 0;
+}
+main .part6 .service_list li {
+    width:350px; height:350px;
+    border-radius: 50%; display:flex; flex-flow: column nowrap;
+    align-items: center; justify-content: center; text-align: center;
+}
+main .part6 .service_list li:first-child {background-color: #0058ab;}
+main .part6 .service_list li:nth-child(2) {background-color: #FFB320;}
+main .part6 .service_list li:last-child {background-color: #007730;}
+main .part6 .service_list li p {margin-bottom: 20px;}
+main .part6 .service_list li p img {}
+main .part6 .service_list li .service_info {color:#fff;}
+main .part6 .service_list li .service_info h3 {font-size: 1.875rem; font-weight: 700;}
+main .part6 .service_list li .service_info p {
+    margin:20px 0; font-size: 1.25rem;
+}
+main .part6 .service_list li .service_info a {
+    color:#fff; text-decoration: underline;
+}
+/* part7 */
+main .part7 {background-color: #0058ab; border-radius: 500px 0 0 0; padding: 200px 0; text-align: center;}
+main .part7 .title {width:100%;text-align: left; margin: 0 auto; padding:0 300px;}
+main .part7 .title .sub_title {color:#FFB320;}
+main .part7 .title .main_title {color:#fff;}
+main .part7 .title p {font-size: 1.25rem; color:#fff; line-height: 1.7; margin-top: 20px;}
+main .part7 #participation_frm {}
+main .part7 #participation_frm fieldset {}
+main .part7 #participation_frm fieldset .skip {}
+main .part7 #participation_frm fieldset ul {
+    background-color: #fff; margin: 100px auto;padding:100px; width: calc(100% - 600px);
+    border-radius: 20px;
+}
+main .part7 #participation_frm fieldset ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+main .part7 #participation_frm fieldset ul li:last-child {
+    margin:0;
+}
+main .part7 #participation_frm fieldset ul li span {
+    font-size: 1.563rem; width:200px; text-align: left;
+}
+main .part7 #participation_frm fieldset ul li:nth-child(5) {
+    display: flex; flex-flow: row nowrap; align-items: flex-start;
+}
+main .part7 #participation_frm fieldset ul li input[name^=user],
+main .part7 #participation_frm fieldset ul li #user_contents{
+    width:900px; line-height: 50px; border-radius: 500px; border:0; background-color: #F0F0F0; font-size: 1.25rem;
+    padding: 0 30px; 
+}
+main .part7 #participation_frm fieldset ul li input[name^=user]:focus,
+main .part7 #participation_frm fieldset ul li #user_contents:focus {outline: none;}
+main .part7 #participation_frm fieldset ul li .gender_check {
+    width:900px; text-align: left;
+    height: 60px; display: flex; flex-flow:row nowrap; align-items: center;
+}
+main .part7 #participation_frm fieldset ul li .gender_check input[name=gender] {display: none;}
+main .part7 #participation_frm fieldset ul li .gender_check input[name=gender]:checked + label {
+    background-image: url(../images/radio_checked.svg);
+}
+main .part7 #participation_frm fieldset ul li .gender_check label {
+    background-image: url(../images/radio_button_unchecked.svg);
+    background-repeat: no-repeat;
+    padding: 5px 0 0 42px; font-size: 1.25rem; height:32px;
+}
+main .part7 #participation_frm fieldset ul li .gender_check label:last-child {margin-left: 132px;}
+main .part7 #participation_frm fieldset ul li #user_contents {
+    border-radius:20px; padding: 10px 30px; height:300px;
+}
+main .part7 #participation_frm fieldset ul li #photo_btn {
+    height: 60px; border-radius: 500px;
+    background-color: #fff; border:1px solid #ddd;
+    display:flex; align-items: center; justify-content: space-between; padding: 20px 30px; font-size: 1.25rem;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+}
+main .part7 #participation_frm fieldset ul li #photo_btn img {margin-right:10px;}
+main .part7 #participation_frm fieldset #submit_btn {
+    width:calc(100% - 600px); line-height: 80px; border-radius: 500px;
+    background-color: #1f1f1f; color:#FBD914; border:0;
+    font-size: 1.875rem; transition:0.3s;
+}
+main .part7 #participation_frm fieldset #submit_btn:hover {
+    background-color: #333333; color: #FFB320; transform: translateY(5px);
+}
+/* part8 */
+main .part8 {
+    background-color: #FFB320; text-align: center;
+    padding:200px 0;
+}
+main .part8 .counter {}
+main .part8 .counter span {
+    font-size: 3.75rem; line-height: 1.7;
+}
+main .part8 .counter span em {
+    font-size: 4.375rem; color: #0058ab;
+}
+main .part8 .counter span,
+main .part8 .counter span em {font-weight: 700;}
+main .part8 .participate_slide {}
+main .part8 .participate_slide .swiper-wrapper {
+    margin:80px 0;
+}
+main .part8 .participate_slide .swiper-wrapper .swiper-slide {
+    width:537px;
+}
+main .part8 .participate_slide .swiper-wrapper .swiper-slide img {width:100%; border-radius: 20px;}
+main .part8 a {
+    background-color: #fff; height:85px; width:415px;
+    display: flex; align-items: center; justify-content: space-between; margin:0 auto;
+    border-radius: 500px; font-size: 1.875rem; padding:20px 50px; box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+}
+main .part8 a img {}
+/* footer */
+footer {
+    background-color: #1f1f1f; padding:100px 0; font-size: 1.25rem; color:#fff;
+}
+footer .sns {margin-bottom: 89px; text-align: center; height:56px;}
+footer .sns a {margin-right: 100px;}
+footer .sns a:last-child {margin:0;}
+footer .sns a img {transition: 0.3s;}
+footer .sns a img:hover {transform: translateY(-10px);}
+footer .ikea_info {
+    margin: 0 auto 50px; width:1320px;
+    display: flex; flex-flow:row nowrap; justify-content: space-between;
+}
+footer .ikea_info > p {margin-right: 319px;}
+footer .ikea_info .info_link a {margin-right:45px;}
+footer .ikea_info .info_link a:last-child {margin:0;}
+footer .ikea_info .info_link a span {color:#fff; text-decoration: underline;}
+footer .ikea_info .info_link a span:hover,
+footer .ikea_info2 > span a:hover {color:#8d8d8d;}
+footer .ikea_info2 {
+    display:flex; flex-flow: column nowrap;
+    width:1320px; margin:0 auto; text-align: left;
+}
+footer .ikea_info2 > span {
+    margin-bottom: 10px; font-weight: 300;
+}
+footer .ikea_info2 > span:last-child {
+    margin-bottom: 0;
+}
+footer .ikea_info2 > span a {
+    color:#fff; text-decoration: underline;
+}
